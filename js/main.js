@@ -8,6 +8,9 @@ var modalActionNegative = document.querySelector('.modal-action-negative');
 var toggleButton = document.querySelector('.toggle-button');
 var mobileNav = document.querySelector('.mobile-nav');
 
+// The following variables refer to the links in the mobile menu
+var mobileNavItemLink = document.querySelector('.mobile-nav-item-link');
+
 // console.dir(backdrop);
 
 function openModal() {
@@ -31,6 +34,11 @@ function displayMobileMenu() {
 image.addEventListener('click', openModal);
 
 backdrop.addEventListener('click', function() {
+  mobileNav.style.display = 'none';
+  closeModal();
+});
+
+mobileNavItemLink.addEventListener('click', function() {
   mobileNav.style.display = 'none';
   closeModal();
 });
