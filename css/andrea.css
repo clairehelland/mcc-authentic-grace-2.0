@@ -157,7 +157,7 @@ h6 {
 }
 
 .main-header-brand {
-  color: #eec7b5;
+  color: #292929;
   text-decoration: none;
   font-weight: 700;
   height: 2.5rem;
@@ -169,6 +169,7 @@ h6 {
 .main-header-brand span {
   height: 100%;
   /* width: 100%; */
+  font-family: 'Bilbo Swash Caps', cursive;
 }
 
 /* .main-logo-container { */
