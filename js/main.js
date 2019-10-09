@@ -9,7 +9,7 @@ var toggleButton = document.querySelector('.toggle-button');
 var mobileNav = document.querySelector('.mobile-nav');
 
 // The following variables refer to the links in the mobile menu
-var mobileNavItemLink = document.querySelector('.mobile-nav-item-link');
+// var mobileNavItemLink = document.querySelector('.mobile-nav-item-link');
 
 // console.dir(backdrop);
 
@@ -38,10 +38,10 @@ backdrop.addEventListener('click', function() {
   closeModal();
 });
 
-mobileNavItemLink.addEventListener('click', function() {
-  mobileNav.style.display = 'none';
-  closeModal();
-});
+// mobileNavItemLink.addEventListener('click', function() {
+//   mobileNav.style.display = 'none';
+//   closeModal();
+// });
 
 modalActionNegative.addEventListener('click', closeModal);
 
