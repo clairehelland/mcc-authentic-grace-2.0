@@ -1,7 +1,12 @@
+// The following variables will be used to control the modal
 var image = document.querySelector('.hero-image');
 var backdrop = document.querySelector('.backdrop');
 var modal = document.querySelector('.modal');
 var modalActionNegative = document.querySelector('.modal-action-negative');
+
+// The following variables will be used to turn the hamburger menu on/off 
+var toggleButton = document.querySelector('.toggle-button');
+var mobileNav = document.querySelector('.mobile-nav');
 
 // console.dir(backdrop);
 
@@ -15,12 +20,24 @@ function closeModal() {
   modal.style.display = 'none';
 }
 
+function displayMobileMenu() {
+  mobileNav.style.display = 'block';
+}
+
 // image.onclick = openModal;
 // backdrop.onclick = closeModal;
 // modalActionNegative.onclick = closeModal;
 
 image.addEventListener('click', openModal);
-backdrop.addEventListener('click', closeModal);
+
+backdrop.addEventListener('click', function() {
+  mobileNav.style.display = 'none';
+  closeModal();
+});
+
 modalActionNegative.addEventListener('click', closeModal);
 
-
+toggleButton.addEventListener('click', function() {
+  mobileNav.style.display = 'block';
+  backdrop.style.display = 'block';
+});
