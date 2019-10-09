@@ -182,6 +182,7 @@ h6 {
   /* font-size: 2rem; */
   /* display: inline-block; */
   height: 100%;
+  letter-spacing: 4px;
   /* vertical-align: middle; */
 }
 
@@ -244,7 +245,8 @@ padding: 0.2rem 0;
   z-index: 101;
   top: 0;
   left: 0;
-  background: #e5e5e5;
+  line-height: 2;
+  background: #eec7b5;
   width: 80%;
   height: 100vh;
 }
