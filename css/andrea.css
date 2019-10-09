@@ -160,31 +160,29 @@ h6 {
   color: #292929;
   text-decoration: none;
   font-weight: 700;
-  height: 2.5rem;
+  height: 3rem;
   /* width: 20px; */
   display: inline-block;
   vertical-align: middle;
 }
 
-.main-header-brand span {
+/* The following code block tricks the CSS so that we can center the brand logo vertically. */
+.main-header-brand:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
   height: 100%;
+}
+/* End of "trick" code block */
+
+.main-header-brand span {
   /* width: 100%; */
   font-family: 'Bilbo Swash Caps', cursive;
-}
-
-/* .main-logo-container { */
+  /* font-size: 2rem; */
   /* display: inline-block; */
+  height: 100%;
   /* vertical-align: middle; */
-  /* display: flex; */
-  /* flex-direction: row; */
-  /* list-style: none; */
-/* } */
-
-/* nav ul {  */
-  /* display: flex; */
-  /* flex-direction: row; */
-  /* list-style: none; */
-/* } */
+}
 
 .main-nav {
   display: none;
@@ -217,7 +215,7 @@ padding: 0.2rem 0;
 /* text-align: center;  */
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 42rem) {
   .toggle-button {
     display: none;
   }
