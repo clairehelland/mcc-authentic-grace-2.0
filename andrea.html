@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Authentic Grace</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/andrea.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
-    <link href="https://fonts.googleapis.com/css?family=Overpass:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Overpass:400,700&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- 1. Backdrop & Modal -->    
@@ -26,7 +27,7 @@
     
     <!-- 2. Navbar -->
     <header class="main-header">
-      <div>
+      <div class="main-header-wrapper">
         <button class="toggle-button">
           <span class="toggle-button-bar"></span>
           <span class="toggle-button-bar"></span>
@@ -34,7 +35,7 @@
         </button>
         <a class="main-header-brand" href="index.html">
           <!-- <img src="images/uhost-icon.png" alt="Authentic Grace logo"> -->
-          <span>AG-cursive</span>
+          <span>AG</span>
         </a>
       </div>
       <!-- <div class="main-logo-container"> -->
@@ -43,13 +44,13 @@
       <nav class="main-nav">
         <ul class="main-nav-items">
           <li class="main-nav-item">
-            <a class="main-nav-item-link" href="#">SHOP</a>
+            <a class="main-nav-item-link" href="#image-grid-section">SHOP</a>
           </li>
           <li class="main-nav-item">
             <a class="main-nav-item-link" href="#">BLOG</a>
           </li>
           <li class="main-nav-item">
-            <a class="main-nav-item-link" href="#">REVIEWS</a>
+            <a class="main-nav-item-link" href="#testimonials-section">REVIEWS</a>
           </li>
           <li class="main-nav-item"> 
             <a class="main-nav-item-link" href="#">ABOUT</a>
@@ -69,16 +70,13 @@
     <nav class="mobile-nav">
       <ul class="mobile-nav-items">
         <li class="mobile-nav-item">
-          <a class="mobile-nav-item-link" href="#"></a> 
-        </li>
-        <li class="mobile-nav-item">
-          <a class="mobile-nav-item-link" href="#">SHOP</a>
+          <a class="mobile-nav-item-link" href="#image-grid-section">SHOP</a>
         </li>
         <li class="mobile-nav-item">
           <a class="mobile-nav-item-link" href="#">BLOG</a>
         </li>
         <li class="mobile-nav-item">
-          <a class="mobile-nav-item-link" href="#">REVIEWS</a>
+          <a class="mobile-nav-item-link" href="#testimonials-section">REVIEWS</a>
         </li>
         <li class="mobile-nav-item">
           <a class="mobile-nav-item-link" href="#">ABOUT</a>
@@ -98,8 +96,10 @@
     <main>
       <!-- 3. Hero image -->
       <section class="hero-section">
+        <div class="hero-overlay">
+        </div>
         <div class="hero-image-container">
-          <img class="hero-image" src="images/photos/cars-daytime-fashion-886404.jpg" alt="">
+          <img class="hero-image" src="images/photos/cars-daytime-fashion-886404.jpg" alt="Woman in floral outfit sitting on hood of an old car">
         </div>
         <div class="hero-text-container">
           <h1 class="hero-text">AUTHENTIC GRACE</h1>
@@ -109,50 +109,46 @@
       </section>
 
 
-
-
-
-
       <!-- 4. Image Grid Section-->
 
-      <section class="image-grid-container">
+      <section id="image-grid-section" class="image-grid-container">
         <h2>SHOP THE LOOK</h2>
         <div class="image-grid-wrapper">
-          <div class="image-wrapper">
+          <figure class="image-wrapper">
             <img class="grid-image grid-image-1" src="images/photos/adult-beach-beautiful-1252982.jpg" alt="">
-          </div>
+          </figure>
 
-          <div class="image-wrapper">
+          <figure class="image-wrapper">
             <img class="grid-image grid-image-2" src="images/photos/blur-colors-details-792762.jpg" alt="">
-          </div>
+          </figure>
 
-          <div class="image-wrapper">
+          <figure class="image-wrapper">
             <img class="grid-image grid-image-3" src="images/photos/adult-alluring-attractive-2808756.jpg" alt="">
-          </div>
+          </figure>
 
-          <div class="image-wrapper">
+          <figure class="image-wrapper">
             <img class="grid-image grid-image-4" src="images/photos/adult-alluring-attractive-2808756.jpg" alt="">
-          </div>
+          </figure>
 
-          <div class="image-wrapper">
+          <figure class="image-wrapper">
             <img class="grid-image grid-image-5" src="images/photos/adult-alluring-attractive-2946584.jpg" alt="">
-          </div>
+          </figure>
 
-          <div class="image-wrapper">
+          <figure class="image-wrapper">
             <img class="grid-image grid-image-6" src="images/photos/accessory-adult-beach-1102225.jpg" alt="">
-          </div>
+          </figure>
 
-          <div class="image-wrapper image-7-wrapper">
+          <figure class="image-wrapper image-7-wrapper">
             <img class="grid-image grid-image-7" src="images/photos/dress-expecting-fashion-1427934.jpg" alt="">
-          </div>
+          </figure>
 
-          <div class="image-wrapper">
+          <figure class="image-wrapper">
              <img class="grid-image grid-image-8" src="images/photos/blurred-background-bridge-daylight-3011518.jpg" alt="">
-          </div>
+          </figure>
 
-          <div class="image-wrapper">
+          <figure class="image-wrapper">
             <img class="grid-image grid-image-9" src="images/photos/adult-beautiful-bench-1055691.jpg" alt="">
-          </div>
+          </figure>
         </div>
       </section>
 
@@ -171,8 +167,9 @@
       <section class="style-container">
 
       </section>
+
       <!-- 7. Testimonials -->
-      <section class="testimonials-section">
+      <section id="testimonials-section" class="testimonials-section">
         <h1>CUSTOMER TESTIMONIALS</h1>
         <div class="testimonials-wrapper">
           <article class="testimonial">
@@ -184,14 +181,14 @@
           </article>
           <article class="testimonial">
             <div class="testimonial-image-wrapper">
-              <img src="images/photos/beautiful-brunette-cute-774909-square.jpg" alt="">
+              <img src="images/photos/adult-alluring-attractive-2741370-square.jpg" alt="">
             </div>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum necessitatibus accusamus soluta esse libero
                 aspernatur ipsa, rerum hic at ullam.</p>
           </article>
           <article class="testimonial">
             <div class="testimonial-image-wrapper">
-              <img src="images/photos/beautiful-brunette-cute-774909-square.jpg" alt="">
+              <img src="images/photos/attractive-beautiful-beauty-2704172-square.jpg" alt="">
             </div>
               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum necessitatibus accusamus soluta esse libero
               aspernatur ipsa, rerum hic at ullam.</p>
@@ -204,7 +201,10 @@
       </section>
       <!-- 9. Footer -->
       <footer>
-      
+        <p>Contact us:</p>
+        <p>Authentic Grace</p>
+        <p>12345 Main St.</p>
+        <p>Charleston, SC 29407</p>
       </footer>
 
     </main>

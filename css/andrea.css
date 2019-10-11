@@ -46,6 +46,14 @@ h6 {
   font-size: 1.0rem;
 }
 
+footer {
+  background-color: #292929;
+  color: #fff;
+  padding: 2rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
 /* 1. Backdrop & Modal */
 .backdrop {
   display: none;
@@ -105,8 +113,9 @@ h6 {
 
 .modal-action-negative:hover,
 .modal-action-negative:active {
-  background: #ff5454;
-  border-color: #ff5454;
+  background: #292929;
+  border-color: #292929;
+  color: #fff;
 }
 
 @media (min-width: 400px) {
@@ -157,33 +166,33 @@ h6 {
 }
 
 .main-header-brand {
-  color: #eec7b5;
+  color: #292929;
   text-decoration: none;
   font-weight: 700;
-  height: 2.5rem;
+  height: 3rem;
   /* width: 20px; */
   display: inline-block;
   vertical-align: middle;
 }
 
-.main-header-brand span {
+/* The following code block tricks the CSS so that we can center the brand logo vertically. */
+.main-header-brand:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
   height: 100%;
-  /* width: 100%; */
 }
+/* End of "trick" code block */
 
-/* .main-logo-container { */
+.main-header-brand span {
+  /* width: 100%; */
+  font-family: 'Bilbo Swash Caps', cursive;
+  /* font-size: 2rem; */
   /* display: inline-block; */
+  height: 100%;
+  letter-spacing: 4px;
   /* vertical-align: middle; */
-  /* display: flex; */
-  /* flex-direction: row; */
-  /* list-style: none; */
-/* } */
-
-/* nav ul {  */
-  /* display: flex; */
-  /* flex-direction: row; */
-  /* list-style: none; */
-/* } */
+}
 
 .main-nav {
   display: none;
@@ -216,7 +225,7 @@ padding: 0.2rem 0;
 /* text-align: center;  */
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 42rem) {
   .toggle-button {
     display: none;
   }
@@ -244,7 +253,8 @@ padding: 0.2rem 0;
   z-index: 101;
   top: 0;
   left: 0;
-  background: #e5e5e5;
+  line-height: 2;
+  background: #eec7b5;
   width: 80%;
   height: 100vh;
 }
@@ -266,37 +276,63 @@ padding: 0.2rem 0;
   font-size: 1.5rem;
 }
 
+/* The hide-nav class will be added when the mobile nav is clicked */
+.hide-nav {
+  display: none;
+}
+
 /* 3. Hero image */
 
 .hero-section {
   position: relative;
-  max-height: 100vh;
-  margin-top: 115px;
+  max-height: 75vh;
+  margin-top: 4rem;
 }
 
 .hero-image-container {
-  position: relative;
+  /* position: relative; */
   top: 0;
   left: 0;
   width: 100vw;
 }
 
 .hero-image {
-  position: static;
+  width: 100vw;
+  /* width: 100%; */
+  max-height: 75vh;
+  object-fit: cover;
+  object-position: top;
+}
+.hero-overlay {
+  background-color: #000;
+  opacity: 0.3;
   top: 0;
   left: 0;
+  height: 100%;
   width: 100vw;
-  max-height: 100vh;
-  object-fit: cover;
+  position: absolute;
 }
 
 .hero-text-container {
-  z-index: 5;
+  z-index: 15;
   color: #fff;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  text-align: center;
+  line-height: 1.5;
+  /* position: flex; */
+  margin: 0 auto;
+  width: 100%;
 }
 
 .hero-text {
   color: #fff;
+  margin: 0 auto;
+}
+
+h6.hero-text {
+  padding-top: 20px;
 }
 
 /* 4. Image Grid Section*/
