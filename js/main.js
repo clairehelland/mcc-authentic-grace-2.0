@@ -13,7 +13,6 @@ const toggleButton = document.querySelector('.toggle-button');
 const mobileNav = document.querySelector('.mobile-nav');
 const mobileNavItemLink = document.querySelector('.mobile-nav-item-link');
 
-
 //Function declarations
 
 function openModal() {
@@ -53,6 +52,10 @@ backdrop.addEventListener('click', function() {
   // mobileNav.style.display = 'none';
   hideMobileNav();
   closeModal();
+});
+
+mobileNav.addEventListener('click', function() {
+  mobileNavItemLinks.addClassName('hide-nav');
 });
 
 
