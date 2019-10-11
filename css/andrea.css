@@ -276,6 +276,11 @@ padding: 0.2rem 0;
   font-size: 1.5rem;
 }
 
+/* The hide-nav class will be added when the mobile nav is clicked */
+.hide-nav {
+  display: none;
+}
+
 /* 3. Hero image */
 
 .hero-section {
