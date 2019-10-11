@@ -279,10 +279,9 @@ padding: 0.2rem 0;
 /* 3. Hero image */
 
 .hero-section {
-  /* position: relative; */
+  position: relative;
   max-height: 100vh;
   margin-top: 4rem;
-  position: relative;
 }
 
 .hero-image-container {
@@ -293,11 +292,12 @@ padding: 0.2rem 0;
 }
 
 .hero-image {
-  position: static;
+  /* position: relative; */
   top: 0;
   left: 0;
   width: 100vw;
-  max-height: 100vh;
+  /* width: 100%; */
+  max-height: 75vh;
   object-fit: cover;
 }
 .hero-overlay {
@@ -316,12 +316,18 @@ padding: 0.2rem 0;
   position: absolute;
   top: 40%;
   left: 25%;
+  text-align: center;
+  line-height: 1.5;
   /* position: flex; */
 }
 
 .hero-text {
   color: #fff;
   margin: 0 auto;
+}
+
+h6.hero-text {
+  padding-top: 20px;
 }
 
 /* 4. Image Grid Section*/

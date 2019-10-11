@@ -1,17 +1,20 @@
+setTimeout(function () {
+  openModal();
+}, 3000);
+
 // The following variables will be used to control the modal
-var image = document.querySelector('.hero-image');
-var backdrop = document.querySelector('.backdrop');
-var modal = document.querySelector('.modal');
-var modalActionNegative = document.querySelector('.modal-action-negative');
+const heroOverlay = document.querySelector('.hero-overlay');
+const backdrop = document.querySelector('.backdrop');
+const modal = document.querySelector('.modal');
+const modalActionNegative = document.querySelector('.modal-action-negative');
 
 // The following variables will be used to turn the hamburger menu on/off 
-var toggleButton = document.querySelector('.toggle-button');
-var mobileNav = document.querySelector('.mobile-nav');
+const toggleButton = document.querySelector('.toggle-button');
+const mobileNav = document.querySelector('.mobile-nav');
+const mobileNavItemLink = document.querySelector('.mobile-nav-item-link');
 
-// The following variables refer to the links in the mobile menu
-// var mobileNavItemLink = document.querySelector('.mobile-nav-item-link');
 
-// console.dir(backdrop);
+//Function declarations
 
 function openModal() {
   backdrop.style.display = 'block';
@@ -23,29 +26,45 @@ function closeModal() {
   modal.style.display = 'none';
 }
 
-function displayMobileMenu() {
+function displayMobileNav() {
   mobileNav.style.display = 'block';
 }
 
-// image.onclick = openModal;
-// backdrop.onclick = closeModal;
-// modalActionNegative.onclick = closeModal;
-
-image.addEventListener('click', openModal);
-
-backdrop.addEventListener('click', function() {
+function hideMobileNav() {
   mobileNav.style.display = 'none';
-  closeModal();
-});
+}
 
-// mobileNavItemLink.addEventListener('click', function() {
-//   mobileNav.style.display = 'none';
-//   closeModal();
-// });
+// heroOverlay.addEventListener('click', openModal);
 
 modalActionNegative.addEventListener('click', closeModal);
 
 toggleButton.addEventListener('click', function() {
-  mobileNav.style.display = 'block';
   backdrop.style.display = 'block';
+  displayMobileNav();
 });
+
+mobileNavItemLink.addEventListener('click', function() {
+  //  mobileNav.style.display = 'none';
+  hideMobileNav();
+  closeModal();
+});
+
+backdrop.addEventListener('click', function() {
+  // mobileNav.style.display = 'none';
+  hideMobileNav();
+  closeModal();
+});
+
+
+
+
+
+
+
+
+
+
+//Global Event Handlers
+// image.onclick = openModal;
+// backdrop.onclick = closeModal;
+// modalActionNegative.onclick = closeModal;
