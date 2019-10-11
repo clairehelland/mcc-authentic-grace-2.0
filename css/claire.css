@@ -1,0 +1,333 @@
+/* Color Palette */
+/* Rosy Brown #eec7b5 */
+/* Cadet Blue #fafafa */
+/* Dark Slate Gray #5a5a5a */
+/* Light Steel Blue #e5e5e5 */
+/* Slate Gray #292929 */
+
+/*------------------------------------------------------------------
+    [Table of contents]
+    1. Backdrop & Modal 
+    2. Navbar Section
+    3. Hero image Section
+    4. Image Grid Section
+    5. Collection Section
+    6. Style Secture
+    7. Testimonials Section
+    8. Footer Section
+    -------------------------------------------------------------------*/
+
+
+/* 0. GENERAL STYLES */
+
+* {
+    margin: 0;
+    padding: 0; 
+}
+
+html {
+    font-size: 100%; 
+}
+body {
+    font-family: Overpass; 
+}
+
+ul {
+    list-style: none; 
+}
+
+.container {
+    max-width: 100%; 
+}
+
+/* 1. Backdrop & Modal */
+
+
+/* 2. Navbar Section */
+
+/*
+nav * {
+    display: inline; 
+    padding: 2.0 rem;  
+}
+.nav {
+    overflow: hidden; 
+    background-color: #e5e5e5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%; 
+    height: 2.0 rem;
+    display: flex; 
+    align-items: center;
+}
+
+.nav a {
+    float: right;
+    color:  #292929;
+    text-align: center;
+    font-size: 1.6 rem; 
+    padding: 2.0 rem;
+    text-decoration: none;
+  }
+
+.nav a:hover {
+    background: #292929;
+    color: #e5e5e5;
+    padding: 2.0 rem; 
+  }
+
+.nav li {
+    margin: 1.6 rem; 
+}
+*/ 
+
+/* 3. Hero image */
+
+
+/* 4. Image Grid Section*/
+.shop {
+    background-color: #fff; 
+    text-align: center; 
+}
+
+
+/* 5. Collection Section*/
+.collection {
+    background-color: #fafafa; 
+    text-align: center; 
+    font-size: 20px; 
+    padding: 25px; 
+}
+
+.collection p {
+    padding: 10px; 
+}
+
+.collection .btn {
+    background-color:  #eec7b5; 
+    color: #292929; 
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px; 
+}
+
+
+/* 6. Style Section*/
+
+.blog-block {  
+ 
+    flex-direction: row;  
+    flex-wrap: wrap; 
+    width: 100%;
+    display: flex;
+    border: 1px solid green;
+    justify-content: center;
+    box-sizing: border-box; 
+    margin: 0;  
+    padding: 0; 
+    align-content: center; 
+    align-items: center; 
+    text-align: center; 
+}
+
+.blog-image {
+    flex: 50%; 
+    max-width: 50%;
+    min-width: 0; 
+    width: 100%; 
+    height: auto; 
+    object-fit: contain;
+    box-sizing: border-box; 
+  }
+      
+  .blog-text {
+    flex: 50%; 
+    flex-grow: 1;  
+    border: 1px solid blue;
+    max-width: 50%;
+    min-width: 0;
+    width: 100%; 
+    height: auto; 
+    background-color: #fff; 
+    text-align: center;     
+    box-sizing: border-box;   
+  }
+
+.blog-text h3 {
+    padding: 10px 30px; 
+}
+
+.blog-text p{
+    padding: 10px 30px; 
+}
+
+.btn-blog {
+    background-color:  #eec7b5; 
+    color: #292929; 
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px; 
+}
+
+
+/* 7. Testimonials Section*/
+
+
+/* 8. Get In Touch Section */
+.contact h3 {
+    text-align: center; 
+    padding-top: 20px; 
+}
+
+.form {
+    font-family: "Overpass", sans-serif; 
+    padding-bottom: 20px; 
+}
+.form-style-1 {
+	margin:10px auto;
+	max-width: 400px;
+	padding: 20px 12px 10px 20px;
+	font: 16px "Overpass", sans-serif;
+}
+.form-style-1 li {
+	padding: 0;
+	display: block;
+	list-style: none;
+	margin: 10px 0 0 0;
+}
+.form-style-1 label{
+	margin:0 0 3px 0;
+	padding:0px;
+	display:block;
+	font-weight: bold;
+}
+.form-style-1 input[type=text], 
+.form-style-1 input[type=date],
+.form-style-1 input[type=datetime],
+.form-style-1 input[type=number],
+.form-style-1 input[type=search],
+.form-style-1 input[type=time],
+.form-style-1 input[type=url],
+.form-style-1 input[type=email],
+textarea, 
+select{
+	box-sizing: border-box;
+	border:1px solid #BEBEBE;
+	padding: 7px;
+	margin:0px;
+	outline: none;	
+}
+.form-style-1 input[type=text]:focus, 
+.form-style-1 input[type=date]:focus,
+.form-style-1 input[type=datetime]:focus,
+.form-style-1 input[type=number]:focus,
+.form-style-1 input[type=search]:focus,
+.form-style-1 input[type=time]:focus,
+.form-style-1 input[type=url]:focus,
+.form-style-1 input[type=email]:focus,
+.form-style-1 textarea:focus, 
+.form-style-1 select:focus{
+	border: 1px solid #eec7b5;
+}
+.form-style-1 .field-divided{
+	width: 49%;
+}
+
+.form-style-1 .field-long{
+	width: 100%;
+}
+.form-style-1 .field-select{
+	width: 100%;
+}
+.form-style-1 .field-textarea{
+	height: 100px;
+}
+.form-style-1 input[type=submit], .form-style-1 input[type=button]{
+	background: #eec7b5;
+	padding: 8px 15px 8px 15px;
+	border: none;
+	color: #fff;
+}
+.form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
+	background: #eec7b5;
+	box-shadow:none;
+}
+.form-style-1 .required{
+	color: #eec7b5; 
+}
+
+.subject span {
+    color:  #e5e5e5; 
+}
+
+
+
+/* 9. Footer Section*/
+.footer {
+    background-color: #e5e5e5; 
+    width: 100%; 
+    height: 100%;
+    padding: 20px;  
+}
+
+.social-media ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    align-items: center; 
+    text-align: center; 
+    justify-content: center; 
+    font-size: 30px; 
+    color: #eec7b5;
+    padding-bottom: 20px; 
+    padding-right: 20px; 
+    padding-left: 20px; 
+    
+}
+
+.social-media li {
+    flex: 10%;  
+    align-items: center; 
+    justify-content: center; 
+    flex-wrap: wrap-reverse; 
+}
+
+.footer a {
+    color: #292929; 
+    text-decoration: none; 
+}
+
+.links a :hover {
+    background-color: #FFF; 
+}
+
+.footer-row {
+    display: flex; 
+    flex-direction: row;  
+    flex-wrap: wrap-reverse;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;   
+    min-width: 0;  
+}
+
+.footer-column {
+    flex: 33.33%;  
+    padding-right: 20px; 
+    padding-left: 20px; 
+    box-sizing: border-box;
+}
+
+/*.copyright {
+    text-align: center;  
+}*/
