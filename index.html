@@ -3,67 +3,287 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Authentic Grace</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
-    <link href="https://fonts.googleapis.com/css?family=Overpass:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Overpass:400,700&display=swap" rel="stylesheet">
   </head>
   <body>
     <!-- 1. Backdrop & Modal -->    
-
+    <div class="backdrop">
+    </div>
+    <div class="modal">
+      <h1 class="modal-title">SIGN UP FOR EMAILS + GET 20% OFF</h1>
+      <h6 class="modal-subtitle">Register to receive promotional offers by email and we'll send you a coupon for 20% off your first purchase.</h6>
+      <div class="modal-actions">
+        <a class="modal-action" href="#">Sign me up!</a>
+        <button class="modal-action modal-action-negative" type="button" href="#">No Thanks</button>
+      </div>
+      
+    </div>
     
     <!-- 2. Navbar -->
     <header class="main-header">
-        <nav>
-          <ul class="main-menu-items">
-            <li class="main-menu-item">SHOP<li>
-            <li class="main-menu-item">BLOG</li>
-            <li class="main-menu-item">REVIEWS</li>
-            <li class="main-menu-item">ABOUT</li>
-            <li class="main-menu-item">CONTACT</li>
-          </ul>
-        </nav>
+      <div class="main-header-wrapper">
+        <button class="toggle-button">
+          <span class="toggle-button-bar"></span>
+          <span class="toggle-button-bar"></span>
+          <span class="toggle-button-bar"></span>
+        </button>
+        <a class="main-header-brand" href="index.html">
+          <!-- <img src="images/uhost-icon.png" alt="Authentic Grace logo"> -->
+          <span>AG</span>
+        </a>
+      </div>
+      <!-- <div class="main-logo-container"> -->
+        <!-- <a class="main-logo" href="#">AG</a> -->
+      <!-- </div> -->
+      <nav class="main-nav">
+        <ul class="main-nav-items">
+          <li class="main-nav-item">
+            <a class="main-nav-item-link" href="#image-grid-section">SHOP</a>
+          </li>
+          <li class="main-nav-item">
+            <a class="main-nav-item-link" href="#">BLOG</a>
+          </li>
+          <li class="main-nav-item">
+            <a class="main-nav-item-link" href="#testimonials-section">REVIEWS</a>
+          </li>
+          <li class="main-nav-item"> 
+            <a class="main-nav-item-link" href="#">ABOUT</a>
+          </li>
+          <li class="main-nav-item">
+            <a class="main-nav-item-link" href="#">CONTACT</a>
+          </li>
+          <li class="main-nav-item user">
+            <a class="main-nav-item-link" href="#"><i class="fas fa-user"></i></a>
+          </li>
+          <li class="main-nav-item cart">
+            <a class="main-nav-item-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+          </li>
+        </ul>
+      </nav>
     </header>
-
+    <nav class="mobile-nav">
+      <ul class="mobile-nav-items">
+        <li class="mobile-nav-item">
+          <a class="mobile-nav-item-link" href="#image-grid-section">SHOP</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a class="mobile-nav-item-link" href="#">BLOG</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a class="mobile-nav-item-link" href="#testimonials-section">REVIEWS</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a class="mobile-nav-item-link" href="#">ABOUT</a>
+        </li>
+        <li class="mobile-nav-item">
+          <a class="mobile-nav-item-link" href="#">CONTACT</a>
+        </li>
+        <li class="mobile-nav-item user">
+          <a class="mobile-nav-item-link" href="#"><i class="fas fa-user"></i></a>
+        </li>
+        <li class="mobile-nav-item cart">
+          <a class="mobile-nav-item-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+        </li>
+      </ul>
+    </nav>
     
     <main>
       <!-- 3. Hero image -->
       <section class="hero-section">
- 
+        <div class="hero-overlay">
+        </div>
+        <div class="hero-image-container">
+          <img class="hero-image" src="images/photos/cars-daytime-fashion-886404.jpg" alt="Woman in floral outfit sitting on hood of an old car">
+        </div>
+        <div class="hero-text-container">
+          <h1 class="hero-text">AUTHENTIC GRACE</h1>
+          <h4 class="hero-text">Boutique</h4>
+          <h6 class="hero-text">Timeless basics + bold statements</h6>
+        </div>  
       </section>
 
 
       <!-- 4. Image Grid Section-->
 
-      <section class="image-grid-container">
+      <section id="image-grid-section" class="image-grid-container">
+        <h2>SHOP THE LOOK</h2>
+        <div class="image-grid-wrapper">
+          <figure class="image-wrapper">
+            <img class="grid-image grid-image-1" src="images/photos/adult-beach-beautiful-1252982.jpg" alt="">
+          </figure>
 
+          <figure class="image-wrapper">
+            <img class="grid-image grid-image-2" src="images/photos/blur-colors-details-792762.jpg" alt="">
+          </figure>
+
+          <figure class="image-wrapper">
+            <img class="grid-image grid-image-3" src="images/photos/adult-alluring-attractive-2808756.jpg" alt="">
+          </figure>
+
+          <figure class="image-wrapper">
+            <img class="grid-image grid-image-4" src="images/photos/adult-alluring-attractive-2808756.jpg" alt="">
+          </figure>
+
+          <figure class="image-wrapper">
+            <img class="grid-image grid-image-5" src="images/photos/adult-alluring-attractive-2946584.jpg" alt="">
+          </figure>
+
+          <figure class="image-wrapper">
+            <img class="grid-image grid-image-6" src="images/photos/accessory-adult-beach-1102225.jpg" alt="">
+          </figure>
+
+          <figure class="image-wrapper image-7-wrapper">
+            <img class="grid-image grid-image-7" src="images/photos/dress-expecting-fashion-1427934.jpg" alt="">
+          </figure>
+
+          <figure class="image-wrapper">
+             <img class="grid-image grid-image-8" src="images/photos/blurred-background-bridge-daylight-3011518.jpg" alt="">
+          </figure>
+
+          <figure class="image-wrapper">
+            <img class="grid-image grid-image-9" src="images/photos/adult-beautiful-bench-1055691.jpg" alt="">
+          </figure>
+        </div>
       </section>
 
 
       <!-- 5. Collection -->
       <section class="collection-container">
-
+        <article>
+          <h3>Stylish clothing made for movement.</h3>
+          <h3>Quality, washer-friendly, stain-resistant fabrics.</h3>
+          <h3>Love it or return it hassle-free.</h3>
+        </article>
+        <a href="#"><button class="button button-collection">COLLECTION</button></a>
       </section>
     
       <!-- 6. Style -->
       <section class="style-container">
-
+          <div class="blog-block">
+              <div class="blog-image">
+                  <img src="https://i.imgur.com/FVxP8Zp.jpg" alt="Girl with stripe blouse">
+              </div>
+              <div class="blog-text">
+                  <h3>STYLE</h3>
+                  <p>Our customer service stylists can help you get the effortless + classic look you desire.</p> 
+                  <p>Check out our blog for featured fashion pairings and new additions to our clothing collection.</p>
+                  <a href="#" class="btn-blog">BLOG</a>   
+              </div>
+          </div>
       </section>
 
       <!-- 7. Testimonials -->
-      <section class="testimonials-section">
-
+      <section id="testimonials-section" class="testimonials-section">
+        <h1>CUSTOMER TESTIMONIALS</h1>
+        <div class="testimonials-wrapper">
+          <article class="testimonial">
+            <div class="testimonial-image-wrapper">
+              <img src="images/photos/beautiful-brunette-cute-774909-square.jpg" alt="">
+            </div>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum necessitatibus accusamus soluta esse libero
+                aspernatur ipsa, rerum hic at ullam.</p>           
+          </article>
+          <article class="testimonial">
+            <div class="testimonial-image-wrapper">
+              <img src="images/photos/adult-alluring-attractive-2741370-square.jpg" alt="">
+            </div>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum necessitatibus accusamus soluta esse libero
+                aspernatur ipsa, rerum hic at ullam.</p>
+          </article>
+          <article class="testimonial">
+            <div class="testimonial-image-wrapper">
+              <img src="images/photos/attractive-beautiful-beauty-2704172-square.jpg" alt="">
+            </div>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum necessitatibus accusamus soluta esse libero
+              aspernatur ipsa, rerum hic at ullam.</p>
+          </article>
+        </div>
       </section>
 
       <!-- 8. Get in Touch -->
       <section class="get-in-touch-container">
-        <h1>GET IN TOUCH</h1>
+        <div class="contact">
+          <h3>GET IN TOUCH</h3>
+          
+          <!--Contact form here-->
+          <form>
+              <ul class="form-style-1">
+                  <li><label>Full Name <span class="required">*</span></label><input type="text" name="field1" class="field-divided" placeholder="First" /> <input type="text" name="field2" class="field-divided" placeholder="Last" /></li>
+                  <li>
+                      <label>Email <span class="required">*</span></label>
+                      <input type="email" name="field3" class="field-long" placeholder="Email" />
+                  </li>
+                  <li class="subject">
+                      <label>Subject</label>
+                      <select name="field4" class="field-select">
+                      <option value="Select One">Select One</option>
+                      <option value="Question">Question</option>
+                      <option value="Customer Assistance">Customer Assistance</option>
+                      <option value="Feedback">Feedback</option>
+                      </select>
+                  </li>
+                  <li>
+                      <label>Your Message <span class="required">*</span></label>
+                      <textarea name="field5" id="field5" class="field-long field-textarea"></textarea>
+                  </li>
+                  <li class="submit-btn">
+                      <input type="submit" value="Submit" />
+                  </li>
+              </ul>
+          </form> 
+        </div>
       </section>
-      
+
       <!-- 9. Footer -->
-      <footer>
-      
+     
+      <footer class="footer">
+               
+              <!--Social media icons here-->
+              <div class="social-media">
+                  <ul class="footer-icons">
+                      <li><span class="fab fa-instagram" alt="Instagram"></span></li>
+                      <li><span class="fab fa-facebook" alt="Facebook"></span></li>
+                      <li><span class="fab fa-twitter" alt="Twitter"></span></li>
+                  </ul>
+              </div>
+              
+              <!--Footer links/secondary links/address-->
+              <div class="footer-row">
+                  <div class="footer-column">
+                      <ul class="address">
+                         <li class="address-item-1"> Authentic Grace</li>
+                         <li class="address-item-2">5000 N Hope Avenue</li>
+                         <li class="address-item-2">Charleston, SC 29407</li>
+                         <li class="phone">Phone: 866-775-9000</li>
+                      </ul>
+                  </div>
+                  <div class="footer-column">
+                          <ul class="links">
+                              <li class="footer-item-1"><a href="#">FAQ</a></li>
+                              <li class="footer-item-2"><a href="#">Stylists</a></li>
+                              <li class="footer-item-3"><a href="#">Shipping</a></li>
+                              <li class="footer-item-4"><a href="#">Careers</a></li>
+                          </ul>   
+                  </div>
+                  <div class="footer-column">
+                      <ul class="links">
+                          <li class="footer-item-5"><a href="#">Returns</a></li>
+                          <li class="footer-item-6"><a href="#">Privacy Policy</a></li>
+                          <li class="footer-item-7"><a href="#">Terms & Conditions</a></li>
+                      </ul>
+                  </div>   
+              </div>
+             
+              <!--Copyright
+              <div class="copyright">
+                  <p>Copyright 2019</p>
+              </div>-->
       </footer>
 
     </main>

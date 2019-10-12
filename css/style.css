@@ -21,32 +21,638 @@
 
 
 /* 0. GENERAL STYLES */
+body {
+  font-family: 'Overpass', sans-serif;
+  background-color: #fff;
+}
 
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.6rem;
+}
+
+h3 {
+  font-size: 2.2rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+h6 {
+  font-size: 1.0rem;
+}
+
+footer {
+  background-color: #292929;
+  color: #fff;
+  padding: 2rem;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
 
 /* 1. Backdrop & Modal */
+.backdrop {
+  display: none;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+}
 
+.modal {
+  border: 1px solid #eec7b5; 
+  display: none;
+  position: fixed;
+  background: #fff;
+  padding: 1rem;
+  width: 280px;
+  top: 20%;
+  left: 30%;
+  width: 40%;
+  /* left: calc(50% - 180px); */
+  z-index: 200;
+}
 
-/* 2. Navbar Section */
+.modal-title,
+.modal-subtitle {
+  margin: 0 0 1rem 0;
+  text-align: center;
+}
 
+.modal-actions {
+  text-align: center;
+}
+
+.modal-action {
+  border: 1px solid #eec7b5;
+  background: #eec7b5;
+  text-decoration: none;
+  color: #000;
+  font: inherit;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.modal-action:hover,
+.modal-action:active {
+  background: #5a5a5a;
+  border-color: #5a5a5a;
+}
+
+.modal-action-negative {
+  background: #e5e5e5;
+  border-color: #e5e5e5;
+}
+
+.modal-action-negative:hover,
+.modal-action-negative:active {
+  background: #292929;
+  border-color: #292929;
+  color: #fff;
+}
+
+@media (min-width: 400px) {
+  .modal {
+    width: 360px;
+    left: calc(50% - 190px);
+  }
+}
+
+/* 2a. Navbar Section - Main */
+.main-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #e5e5e5;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  /* display: flex; */
+  z-index: 20;
+}
+
+.main-header > div {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.toggle-button {
+  width: 3rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding-top: 0;
+  padding-bottom: 0;
+  vertical-align: middle;
+}
+
+.toggle-button:focus {
+  outline: none;
+}
+
+.toggle-button-bar {
+  width: 100%;
+  height: 0.2rem;
+  background: black;
+  display: block;
+  margin: 0.6rem 0;
+}
+
+.main-header-brand {
+  color: #292929;
+  text-decoration: none;
+  font-weight: 700;
+  height: 3rem;
+  /* width: 20px; */
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* The following code block tricks the CSS so that we can center the brand logo vertically. */
+.main-header-brand:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+/* End of "trick" code block */
+
+.main-header-brand span {
+  /* width: 100%; */
+  font-family: 'Bilbo Swash Caps', cursive;
+  /* font-size: 2rem; */
+  /* display: inline-block; */
+  height: 100%;
+  letter-spacing: 4px;
+  /* vertical-align: middle; */
+}
+
+.main-nav {
+  display: none;
+  text-align: right;
+  width: calc(100% - 122px);
+  vertical-align: middle;
+}
+
+.main-nav-items {
+  margin: 0;
+  padding: 0;        /* This also has the effect of removing bullet points */
+  list-style: none;  /* removes bullet points */
+}
+
+.main-nav-item {
+  display: inline-block;
+  margin: 0 1rem;
+}
+
+.main-nav-item-link,
+.mobile-nav-item-link { 
+color: #292929; 
+font-weight: 700; 
+/* letter-spacing: 2px;  */
+text-decoration: none; 
+/* background: #e5e5e5;  */
+padding: 0.2rem 0; 
+/* display: inline-block;  */
+/* width: 100%;  */
+/* text-align: center;  */
+}
+
+@media (min-width: 42rem) {
+  .toggle-button {
+    display: none;
+  }
+
+  .main-nav {
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 44px);
+    vertical-align: middle;
+  }
+}
+
+.main-nav-item-link:hover,
+.main-nav-item-link:active { 
+  color: #e5e5e5;
+  background: #292929;
+  border-bottom: 5px solid #e5e5e5;
+  /* opacity: 0.75;  */
+}
+
+/* 2b. Navbar Section - Mobile */
+.mobile-nav {
+  display: none;
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  line-height: 2;
+  background: #eec7b5;
+  width: 80%;
+  height: 100vh;
+}
+
+.mobile-nav-items {
+  width: 90%;
+  height: 100%;
+  list-style: none;
+  margin: 10% auto;
+  padding: 0;
+  text-align: center;
+}
+
+.mobile-nav-item {
+  margin: 1rem 0;
+}
+
+.mobile-nav-item-link {
+  font-size: 1.5rem;
+}
+
+/* The hide-nav class will be added when the mobile nav is clicked */
+.hide-nav {
+  display: none;
+}
 
 /* 3. Hero image */
 
+.hero-section {
+  position: relative;
+  max-height: 75vh;
+  margin-top: 4rem;
+}
+
+.hero-image-container {
+  /* position: relative; */
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+.hero-image {
+  width: 100vw;
+  /* width: 100%; */
+  max-height: 75vh;
+  object-fit: cover;
+  object-position: top;
+}
+.hero-overlay {
+  background-color: #000;
+  opacity: 0.3;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100vw;
+  position: absolute;
+}
+
+.hero-text-container {
+  z-index: 15;
+  color: #fff;
+  position: absolute;
+  top: 40%;
+  left: 0;
+  text-align: center;
+  line-height: 1.5;
+  /* position: flex; */
+  margin: 0 auto;
+  width: 100%;
+}
+
+.hero-text {
+  color: #fff;
+  margin: 0 auto;
+}
+
+h6.hero-text {
+  padding-top: 20px;
+}
 
 /* 4. Image Grid Section*/
+
+.image-grid-container {
+  padding-bottom: 200px;
+  text-align: center;
+}
+
+.image-grid-container h2 {
+  padding: 4rem 0 6rem 0;
+  font-weight: 400;
+}
+
+.image-grid-wrapper {
+  display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  /* grid-template-rows: repeat(auto-fit, minmax(320px, 1fr)); */
+  grid-gap: 3rem;
+  margin: 0 auto;
+  max-width: 1060px;
+}
+
+.image-wrapper {
+  /* max-height: 400px; */
+  overflow: hidden;
+  position: relative;
+}
+
+.grid-image {
+  width: 100%;
+  /* height: 100%; */
+  object-fit: cover;
+}
+
+.grid-image-7 {
+  object-position: -25% -25%;
+  /* object-fit: contain; */
+}
+
 
 
 
 /* 5. Collection Section*/
+.collection-container {
+  background-color: #e5e5e5;
+  padding: 200px 0;
+  text-align: center;
+  letter-spacing: 5px;
+  line-height: 50px;
+}
 
+.collection-container article {
+  padding: 100px 20px;
+}
 
+.button-collection {
+  background-color: #eec7b5;
+  padding: 2rem 3rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+}
 /* 6. Style Section*/
+
+.blog-block {  
+ 
+    flex-direction: row;  
+    flex-wrap: wrap; 
+    width: 100%;
+    display: flex;
+    border: 1px solid green;
+    justify-content: center;
+    box-sizing: border-box; 
+    margin: 0;  
+    padding: 0; 
+    align-content: center; 
+    align-items: center; 
+    text-align: center; 
+}
+
+.blog-image {
+    flex: 50%; 
+    max-width: 50%;
+    min-width: 0; 
+    width: 100%; 
+    height: auto; 
+    object-fit: contain;
+    box-sizing: border-box; 
+  }
+      
+  .blog-text {
+    flex: 50%; 
+    flex-grow: 1;  
+    border: 1px solid blue;
+    max-width: 50%;
+    min-width: 0;
+    width: 100%; 
+    height: auto; 
+    background-color: #fff; 
+    text-align: center;     
+    box-sizing: border-box;   
+  }
+
+.blog-text h3 {
+    padding: 10px 30px; 
+}
+
+.blog-text p{
+    padding: 10px 30px; 
+}
+
+.btn-blog {
+    background-color:  #eec7b5; 
+    color: #292929; 
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px; 
+}
 
 
 /* 7. Testimonials Section*/
+.testimonials-section {
+  background-color: #eec7b5;
+  font-weight: 400;
+  padding: 200px 50px;
+}
 
+.testimonials-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.testimonial {
+  display: flex;
+  flex-flow: column;
+  border: 1px solid #292929;
+  padding: 2rem;
+  justify-content: center;
+  max-width: 300px;
+}
+
+.testimonial-image-wrapper {
+  /* max-width: 175px; */
+  align-self: center;
+}
+
+.testimonial-image-wrapper img {
+  /* align-self: center; */
+  max-width: 150px;
+  border-radius: 50%;
+}
 
 /* 8. Get In Touch Section */
+/* .get-in-touch-container {
+  background-color: #fff;
+  padding: 200px 50px;
+} */
+
+.contact h3 {
+    text-align: center; 
+    padding-top: 20px; 
+}
+
+.form {
+    font-family: "Overpass", sans-serif; 
+    padding-bottom: 20px; 
+}
+.form-style-1 {
+	margin:10px auto;
+	max-width: 400px;
+	padding: 20px 12px 10px 20px;
+	font: 16px "Overpass", sans-serif;
+}
+.form-style-1 li {
+	padding: 0;
+	display: block;
+	list-style: none;
+	margin: 10px 0 0 0;
+}
+.form-style-1 label{
+	margin:0 0 3px 0;
+	padding:0px;
+	display:block;
+	font-weight: bold;
+}
+.form-style-1 input[type=text], 
+.form-style-1 input[type=date],
+.form-style-1 input[type=datetime],
+.form-style-1 input[type=number],
+.form-style-1 input[type=search],
+.form-style-1 input[type=time],
+.form-style-1 input[type=url],
+.form-style-1 input[type=email],
+textarea, 
+select{
+	box-sizing: border-box;
+	border:1px solid #BEBEBE;
+	padding: 7px;
+	margin:0px;
+	outline: none;	
+}
+.form-style-1 input[type=text]:focus, 
+.form-style-1 input[type=date]:focus,
+.form-style-1 input[type=datetime]:focus,
+.form-style-1 input[type=number]:focus,
+.form-style-1 input[type=search]:focus,
+.form-style-1 input[type=time]:focus,
+.form-style-1 input[type=url]:focus,
+.form-style-1 input[type=email]:focus,
+.form-style-1 textarea:focus, 
+.form-style-1 select:focus{
+	border: 1px solid #eec7b5;
+}
+.form-style-1 .field-divided{
+	width: 49%;
+}
+
+.form-style-1 .field-long{
+	width: 100%;
+}
+.form-style-1 .field-select{
+	width: 100%;
+}
+.form-style-1 .field-textarea{
+	height: 100px;
+}
+.form-style-1 input[type=submit], .form-style-1 input[type=button]{
+	background: #eec7b5;
+	padding: 8px 15px 8px 15px;
+	border: none;
+	color: #fff;
+}
+.form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
+	background: #eec7b5;
+	box-shadow:none;
+}
+.form-style-1 .required{
+	color: #eec7b5; 
+}
+
+.subject span {
+    color:  #e5e5e5; 
+}
+
 
 
 /* 9. Footer Section*/
+.footer {
+    background-color: #e5e5e5; 
+    width: 100%; 
+    height: 100%;
+    padding: 20px;  
+}
 
+.social-media ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    align-items: center; 
+    text-align: center; 
+    justify-content: center; 
+    font-size: 30px; 
+    color: #eec7b5;
+    padding-bottom: 20px; 
+    padding-right: 20px; 
+    padding-left: 20px; 
+    
+}
+
+.social-media li {
+    flex: 10%;  
+    align-items: center; 
+    justify-content: center; 
+    flex-wrap: wrap-reverse; 
+}
+
+.footer a {
+    color: #292929; 
+    text-decoration: none; 
+}
+
+.links a :hover {
+    background-color: #FFF; 
+}
+
+.footer-row {
+    display: flex; 
+    flex-direction: row;  
+    flex-wrap: wrap-reverse;
+    align-items: center; 
+    justify-content: center; 
+    text-align: center;   
+    min-width: 0;  
+}
+
+.footer-column {
+    flex: 33.33%;  
+    padding-right: 20px; 
+    padding-left: 20px; 
+    box-sizing: border-box;
+}
+
+/*.copyright {
+    text-align: center;  
+}*/
+
+
+
+
+
+/* hover effect with delay:
+element:hover {
+  opacity: 0.5;
+  transition: 0.9s;
+} */
