@@ -72,10 +72,11 @@ footer {
   position: fixed;
   background: #fff;
   padding: 1rem;
-  width: 280px;
+  width: 25%;
   top: 20%;
   left: 30%;
   width: 40%;
+  padding: 2.5rem; 
   /* left: calc(50% - 180px); */
   z-index: 200;
 }
@@ -398,11 +399,17 @@ h6.hero-text {
 }
 /* 6. Style Section*/
 
+.blog-block h2 {
+  text-align: center; 
+  padding: 20px; 
+}
+
 .blog-block {  
  
     flex-direction: row;  
     flex-wrap: wrap; 
-    width: 100%;
+    width: 100vw;
+    height: auto; 
     display: flex;
     border: 1px solid green;
     justify-content: center;
@@ -416,21 +423,23 @@ h6.hero-text {
 
 .blog-image {
     flex: 50%; 
-    max-width: 50%;
+    max-width: 50vw;
     min-width: 0; 
-    width: 100%; 
+    width: 100vw; 
     height: auto; 
     object-fit: contain;
     box-sizing: border-box; 
+    margin:0;
+    padding: 0; 
   }
       
   .blog-text {
     flex: 50%; 
     flex-grow: 1;  
     border: 1px solid blue;
-    max-width: 50%;
+    max-width: 50vw;
     min-width: 0;
-    width: 100%; 
+    width: 100vw; 
     height: auto; 
     background-color: #fff; 
     text-align: center;     
@@ -500,7 +509,8 @@ h6.hero-text {
   padding: 200px 50px;
 } */
 
-.contact h3 {
+.contact h2
+ {
     text-align: center; 
     padding-top: 20px; 
 }
