@@ -480,6 +480,7 @@ h6.hero-text {
   padding: 2rem;
   justify-content: center;
   max-width: 300px;
+  background-color: #fff;
 }
 
 .testimonial-image-wrapper {
