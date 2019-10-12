@@ -2,6 +2,8 @@ setTimeout(function () {
   openModal();
 }, 3000);
 
+// Variable declarations
+
 // The following variables will be used to control the modal
 const heroOverlay = document.querySelector('.hero-overlay');
 const backdrop = document.querySelector('.backdrop');
@@ -57,10 +59,6 @@ backdrop.addEventListener('click', function() {
 mobileNav.addEventListener('click', function() {
   mobileNavItemLinks.addClassName('hide-nav');
 });
-
-
-
-
 
 
 
