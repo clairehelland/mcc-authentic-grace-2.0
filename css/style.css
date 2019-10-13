@@ -492,11 +492,20 @@ h6.hero-text {
 .testimonial {
   display: flex;
   flex-flow: column;
-  border: 1px solid #292929;
+  border: 1px solid #e5e5e5;
+  box-shadow: 2px 3px #5a5a5a; 
   padding: 2rem;
   justify-content: center;
   max-width: 300px;
   background-color: #fff;
+}
+
+.testimonial p {
+  padding-top: 2rem; 
+  padding-right: 1rem; 
+  padding-left: 1rem; 
+  text-align: left; 
+  text-indent: 20px; 
 }
 
 .testimonial-image-wrapper {
@@ -518,7 +527,7 @@ h6.hero-text {
 
 .contact {
   background-color: #fff;
-  padding: 2.5rem; 
+  padding: 3rem; 
 }
 
 .contact h2 {
