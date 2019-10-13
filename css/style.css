@@ -473,12 +473,12 @@ h6.hero-text {
 .testimonials-section {
   background-color: #eec7b5;
   font-weight: 400;
-  padding: 200px 50px;
+  padding: 7rem 3rem;
 }
 
 .testimonials-section h2 {
     text-align: center; 
-    padding: 2rem; 
+    padding-bottom: 5rem; 
 }
 
 .testimonials-wrapper {
