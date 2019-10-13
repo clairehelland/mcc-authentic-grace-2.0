@@ -424,10 +424,10 @@ h6.hero-text {
 .blog-image {
     flex: 50%; 
     max-width: 50vw;
-    min-width: 0; 
-    width: 100vw; 
+    min-width: 600px;
+    width: 100%;   
     height: auto; 
-    object-fit: contain;
+    object-fit: cover;
     box-sizing: border-box; 
     margin:0;
     padding: 0; 
@@ -438,8 +438,8 @@ h6.hero-text {
     flex-grow: 1;  
     border: 1px solid blue;
     max-width: 50vw;
-    min-width: 0;
-    width: 100vw; 
+    min-width: 600px;
+    width: 100%; 
     height: auto; 
     background-color: #fff; 
     text-align: center;     
@@ -450,7 +450,7 @@ h6.hero-text {
     padding: 10px 30px; 
 }
 
-.blog-text p{
+.blog-text p {
     padding: 10px 30px; 
 }
 
@@ -492,11 +492,20 @@ h6.hero-text {
 .testimonial {
   display: flex;
   flex-flow: column;
-  border: 1px solid #292929;
+  border: 1px solid #e5e5e5;
+  box-shadow: 2px 3px #5a5a5a; 
   padding: 2rem;
   justify-content: center;
   max-width: 300px;
   background-color: #fff;
+}
+
+.testimonial p {
+  padding-top: 2rem; 
+  padding-right: 1rem; 
+  padding-left: 1rem; 
+  text-align: left; 
+  text-indent: 20px; 
 }
 
 .testimonial-image-wrapper {
@@ -518,7 +527,7 @@ h6.hero-text {
 
 .contact {
   background-color: #fff;
-  padding: 2.5rem; 
+  padding: 3rem; 
 }
 
 .contact h2 {
