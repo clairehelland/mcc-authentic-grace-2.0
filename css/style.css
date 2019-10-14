@@ -49,7 +49,7 @@ h6 {
 footer {
   background-color: #292929;
   color: #fff;
-  padding: 2rem;
+  padding: 4rem 0;
   line-height: 1.5;
   letter-spacing: 1px;
 }
@@ -70,15 +70,22 @@ footer {
   border: 1px solid #eec7b5; 
   display: none;
   position: fixed;
+  top: 20%;
   background: #fff;
   padding: 1rem;
-  width: 280px; /*WONDERING WHY THERE ARE TWO WIDTH PROPERTIES*/
-  top: 20%;
-  left: 30%;
-  width: 40%;
-  padding: 2.5rem; 
-  /* left: calc(50% - 180px); */
+  width: 280px;
+  /* padding: 2.5rem;  */
+  left: calc(50% - 140px);
   z-index: 200;
+}
+
+@media (min-width: 680px) {
+  .modal {
+    width: 360px;
+    top: 20%;
+    left: 30%;
+    width: 40%;
+  }
 }
 
 .modal-title,
@@ -117,13 +124,6 @@ footer {
   background: #292929;
   border-color: #292929;
   color: #fff;
-}
-
-@media (min-width: 400px) {
-  .modal {
-    width: 360px;
-    left: calc(50% - 190px);
-  }
 }
 
 /* 2a. Navbar Section - Main */
@@ -617,60 +617,116 @@ select{
 }
 
 /* 9. Footer Section*/
+
 .footer {
-    background-color: #e5e5e5; 
-    width: 100%; 
-    height: 100%;
-    padding: 2.5rem;  
+  width: 100%; 
+  height: 100%;
 }
 
-.social-media ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap-reverse;
-    align-items: center; 
-    text-align: center; 
-    justify-content: center; 
-    font-size: 30px; 
-    color: #eec7b5;
-    padding-bottom: 20px; 
-    padding-right: 20px; 
-    padding-left: 20px; 
-    
+.footer-icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  align-items: center; 
+  text-align: center; 
+  justify-content: center; 
+  font-size: 30px; 
+  color: #eec7b5;
+  padding-bottom: 20px; 
+  /* padding-right: 20px; 
+  padding-left: 20px;  */
+}
+/* TEST */
+.footer-icons-test {
+  display: block;
+  text-align: center;
+  font-size: 2rem; 
+  color: #eec7b5;
+  padding-bottom: 20px; 
+}
+/* END TEST */
+
+.footer-social-media li {
+  flex: 10%;  
+  align-items: center; 
+  justify-content: center; 
+  flex-wrap: wrap-reverse; 
 }
 
-.social-media li {
-    flex: 10%;  
-    align-items: center; 
-    justify-content: center; 
-    flex-wrap: wrap-reverse; 
+/* TEST */
+.footer-icons-li-test { /* previously .footer-social-media li */
+  display: inline-block;
+  width: 3rem;
+  padding: .5rem;
 }
+/* END TEST */
 
 .footer a {
-    color: #292929; 
-    text-decoration: none; 
+  color: #fff; 
+  text-decoration: none; 
 }
 
-.links a :hover {
-    background-color: #FFF; 
+.links a: hover {
+  background-color: #FFF; 
 }
+
+/* TEST */
+/* Note: White background will not work if we keep the text color white */
+/* Here is an alternative hover effect: */
+.footer-link-li-test:hover {
+  /* background-color: #5a5a5a; */
+  font-size: 115%;
+}
+/* END TEST */
 
 .footer-row {
-    display: flex; 
-    flex-direction: row;  
-    flex-wrap: wrap-reverse;
-    align-items: center; 
-    justify-content: center; 
-    text-align: center;   
-    min-width: 0;  
+  display: flex; 
+  flex-direction: row;  
+  flex-wrap: wrap-reverse;
+  align-items: center; 
+  justify-content: center; 
+  text-align: center;   
+  min-width: 0;  
 }
 
-.footer-column {
-    flex: 33.33%;  
-    padding-right: 20px; 
-    padding-left: 20px; 
-    box-sizing: border-box;
+/* TEST */
+.footer-row-test {
+  display: flex; 
+  flex-direction: column-reverse;  
+   align-items: center; 
+  justify-content: center; 
+  text-align: center;   
+  min-width: 320px;  
 }
+
+@media (min-width: 1041px) {
+  .footer-row-test {
+    /* width: 360px; */
+    flex-direction: row;
+  }
+}
+/* END TEST */
+
+.footer-column {
+  flex: 33.33%;  
+  padding-right: 20px; 
+  padding-left: 20px; 
+  box-sizing: border-box;
+}
+
+/* TEST */
+.footer-column-test {
+  flex: 33.33%;  
+  min-width: 320px;
+  padding: 20px;
+}
+/* END TEST */
+
+
+
+
+
+
 
 /*.copyright {
     text-align: center;  
