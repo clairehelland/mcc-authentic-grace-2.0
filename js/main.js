@@ -13,7 +13,7 @@ const modalActionNegative = document.querySelector('.modal-action-negative');
 // The following variables will be used to turn the hamburger menu on/off 
 const toggleButton = document.querySelector('.toggle-button');
 const mobileNav = document.querySelector('.mobile-nav');
-const mobileNavItemLink = document.querySelector('.mobile-nav-item-link');
+const mobileNavItemLinkList = document.querySelectorAll('.mobile-nav-item-link');
 
 //Function declarations
 
@@ -44,10 +44,12 @@ toggleButton.addEventListener('click', function() {
   displayMobileNav();
 });
 
-mobileNavItemLink.addEventListener('click', function() {
-  //  mobileNav.style.display = 'none';
-  hideMobileNav();
-  closeModal();
+mobileNavItemLinkList.forEach(function(a){
+  a.addEventListener('click', function () {
+    //  mobileNav.style.display = 'none';
+    hideMobileNav();
+    closeModal();
+  })
 });
 
 backdrop.addEventListener('click', function() {
