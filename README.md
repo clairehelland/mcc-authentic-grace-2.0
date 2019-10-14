@@ -21,7 +21,7 @@ Andrea has been learning web development for several months...until now had not 
 
 ## Understanding the Business
 
-
+We felt it was important to take time to really understand the buyer persona and customer journey before designing the site.
 
 ### Buyer Persona
 
@@ -33,7 +33,7 @@ Andrea has been learning web development for several months...until now had not 
 
 ## Design of Site
 
-In designing the 
+The design of the site was tied as closely as possible to the buyer persona and customer journey to make the shopping experience a delight for the target audience.
 
 ### Design - Wireframe
 
