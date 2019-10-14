@@ -4,7 +4,7 @@
 
 This project was a joint effort produced in response to an assignment for Moms Can Code School, Cohort 4.  
 
-![Assignment to create a minimum viable product (MVP) for online store] (/images/customer-journey.JPG)
+![Assignment to create a minimum viable product (MVP) for online store] (images/design/customer-journey.JPG)
 
 The assignment, An online storefront created for a specific (fictional) boutique women's clothing store
 
