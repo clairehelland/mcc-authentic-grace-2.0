@@ -70,15 +70,22 @@ footer {
   border: 1px solid #eec7b5; 
   display: none;
   position: fixed;
+  top: 20%;
   background: #fff;
   padding: 1rem;
-  width: 280px; /*WONDERING WHY THERE ARE TWO WIDTH PROPERTIES*/
-  top: 20%;
-  left: 30%;
-  width: 40%;
-  padding: 2.5rem; 
-  /* left: calc(50% - 180px); */
+  width: 280px;
+  /* padding: 2.5rem;  */
+  left: calc(50% - 140px);
   z-index: 200;
+}
+
+@media (min-width: 680px) {
+  .modal {
+    width: 360px;
+    top: 20%;
+    left: 30%;
+    width: 40%;
+  }
 }
 
 .modal-title,
@@ -117,13 +124,6 @@ footer {
   background: #292929;
   border-color: #292929;
   color: #fff;
-}
-
-@media (min-width: 400px) {
-  .modal {
-    width: 360px;
-    left: calc(50% - 190px);
-  }
 }
 
 /* 2a. Navbar Section - Main */
