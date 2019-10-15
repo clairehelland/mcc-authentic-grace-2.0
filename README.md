@@ -4,7 +4,7 @@
 
 This project was a joint effort produced in response to an assignment for Moms Can Code School, Cohort 4.  
 
-![Assignment to create a minimum viable product (MVP) for online store] (images/design/customer-journey.JPG)
+![Assignment to create a minimum viable product, or MVP, for online store] (images/design/customer-journey.JPG)
 
 ![jkkldfsj] (https://github.com/andreamartz/mmc-authentic-grace/blob/master/images/design/customer-journey.JPG)
 
@@ -17,7 +17,7 @@ This assignment was
 Claire Helland (clairehelland)
 
 Andrea Martz (andreamartz)
-Andrea has been learning web development for several months...until now had not built much...still desire to learn Figma
+
 
 ## Understanding the Business
 
