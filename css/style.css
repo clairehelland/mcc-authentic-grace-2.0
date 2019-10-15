@@ -636,7 +636,6 @@ select{
   text-align: center;
   font-size: 2rem; 
   color: #eec7b5;
-  cursor: pointer;
   padding-bottom: 20px; 
 }
 
@@ -646,6 +645,10 @@ select{
   padding: .5rem;
 }
 
+.footer-icon {
+  cursor: pointer;
+}
+  
 .footer a {
   color: #fff; 
   text-decoration: none; 
