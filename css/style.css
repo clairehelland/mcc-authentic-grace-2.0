@@ -408,25 +408,20 @@ h6.hero-text {
  
     flex-direction: row;  
     flex-wrap: wrap; 
-    width: 100vw;
-    height: auto; 
     display: flex;
     border: 1px solid green;
     justify-content: center;
+    align-content: center; 
+    align-items: center;  
     box-sizing: border-box; 
     margin: 0;  
     padding: 0; 
-    align-content: center; 
-    align-items: center; 
-    text-align: center; 
 }
 
-.blog-image {
-    flex: 50%; 
-    max-width: 50vw;
-    min-width: 600px;
-    width: 100%;   
-    height: auto; 
+.blog-image img {
+    flex: 1 0 0; 
+    min-width: 600px; 
+    max-width: 50vw; 
     object-fit: cover;
     box-sizing: border-box; 
     margin:0;
@@ -434,25 +429,15 @@ h6.hero-text {
   }
       
   .blog-text {
-    flex: 50%; 
-    flex-grow: 1;  
+    flex: 1 0 0;  
+    min-width: 600px; 
+    max-width: 50wv; 
+    text-align: center; 
     border: 1px solid blue;
-    max-width: 50vw;
-    min-width: 600px;
-    width: 100%; 
-    height: auto; 
-    background-color: #fff; 
-    text-align: center;     
+    background-color: #fff;     
     box-sizing: border-box;   
   }
 
-.blog-text h3 {
-    padding: 10px 30px; 
-}
-
-.blog-text p {
-    padding: 10px 30px; 
-}
 
 .btn-blog {
     background-color:  #eec7b5; 
@@ -466,12 +451,20 @@ h6.hero-text {
     margin: 20px; 
 }
 
+.blog-text h2 {
+  padding: 4rem 30px; 
+}
+
+.blog-text h4 {
+  padding: 10px 2.5rem; 
+}
 
 /* 7. Testimonials Section*/
 
 
 .testimonials-section {
   background-color: #eec7b5;
+  color: #292929; 
   font-weight: 400;
   padding: 7rem 3rem;
 }
@@ -479,6 +472,11 @@ h6.hero-text {
 .testimonials-section h2 {
     text-align: center; 
     padding-bottom: 5rem; 
+}
+
+.testimonials-section span {
+  text-align: right; 
+  font-weight: bold; 
 }
 
 .testimonials-wrapper {
@@ -505,6 +503,9 @@ h6.hero-text {
   padding-right: 1rem; 
   padding-left: 1rem; 
   text-align: left; 
+}
+
+.review p {
   text-indent: 20px; 
 }
 
@@ -527,17 +528,16 @@ h6.hero-text {
 
 .contact {
   background-color: #fff;
-  padding: 3rem; 
+  padding: 7rem 3rem; 
 }
 
 .contact h2 {
     text-align: center; 
-    padding: 1rem; 
+    padding-bottom: 5rem; 
 }
 
 .form {
-    font-family: "Overpass", sans-serif; 
-    padding-bottom: 2.5rem; 
+    font-family: "Overpass", sans-serif;  
 }
 .form-style-1 {
 	margin:10px auto;
