@@ -409,7 +409,6 @@ h6.hero-text {
     flex-direction: row;  
     flex-wrap: wrap; 
     display: flex;
-    border: 1px solid green;
     justify-content: center;
     align-content: center; 
     align-items: center;  
@@ -420,8 +419,8 @@ h6.hero-text {
 
 .blog-image img {
     flex: 1 0 0; 
-    min-width: 600px; 
-    max-width: 50vw; 
+    min-width: 320px; 
+    max-width: 100vw; 
     object-fit: cover;
     box-sizing: border-box; 
     margin:0;
@@ -430,12 +429,15 @@ h6.hero-text {
       
   .blog-text {
     flex: 1 0 0;  
-    min-width: 600px; 
+    min-width: 320px; 
     max-width: 50wv; 
+    overflow-wrap: break-word; 
     text-align: center; 
-    border: 1px solid blue;
     background-color: #fff;     
-    box-sizing: border-box;   
+    box-sizing: border-box;  
+    padding-left: 3rem;
+    padding-right: 3rem;  
+    padding-bottom: 3rem; 
   }
 
 
@@ -457,6 +459,12 @@ h6.hero-text {
 
 .blog-text h4 {
   padding: 10px 2.5rem; 
+}
+
+@media (min-width: 1040px) {
+ .blog-image img {
+   width: 50vw; 
+ }
 }
 
 /* 7. Testimonials Section*/
