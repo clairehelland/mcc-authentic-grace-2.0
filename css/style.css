@@ -635,21 +635,26 @@ select{
   display: block;
   text-align: center;
   font-size: 2rem; 
-  color: #eec7b5;
-  padding-bottom: 20px; 
+  padding-bottom: 20px;
 }
 
 .footer-icons-li { /* previously .footer-social-media li */
   display: inline-block;
   width: 3rem;
   padding: .5rem;
+  color: #eec7b5;
+}
+
+.footer-icons-li a {
+  text-decoration: none; 
+  color: #eec7b5;
 }
 
 .footer-icon {
   cursor: pointer;
 }
   
-.footer a {
+.footer-links a {
   color: #fff; 
   text-decoration: none; 
 }
@@ -679,6 +684,11 @@ select{
   flex: 33.33%;  
   min-width: 320px;
   padding: 20px;
+}
+
+.phone a {
+  text-decoration: none; 
+  color: #fff; 
 }
 
 
