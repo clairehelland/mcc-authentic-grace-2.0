@@ -12,7 +12,7 @@ The assignment details can be seen in the image below.  It should be noted that 
 
 ## Authors
 
-Claire Helland (clairehelland) - Claire is a novice coder learning to code in the MomsCan&Co Coding program. Her work is informed by a marketing and e-commerce career.
+Claire Helland (clairehelland) - Claire is a novice coder learning front-end development in the MomsCan&Co Coding program. She hopes to one day work up to being a full-stack developer, and her codind is informed by a marketing and e-commerce career. Claire hopes to one day use her skills as a force for good in the world.
 
 Andrea Martz, M.A. (andreamartz) is a "jack of many trades" in the field of professional certification testing.  Recently, she fell in love with coding, and she is currently building her full-stack web development skills.  She is passionate about education for all people and service to marginalized and underrepresented communities.
 
@@ -40,7 +40,7 @@ A neutral color palette was chosen, which aligns with the business goals and cus
 
 ### Wireframe/Mock-up
 
-The wireframe/mock-up includes a couple versions of the homepage, a design for a desktop and mobile e-mail module, menus, mobile layout and mood boards. Figma was used to design and create this layout, which can be seen below: ![Figma Wireframe/Mock-Up for Authentic Grace](https://www.figma.com/file/cCE6o7pNZsbhR6qQBmdNUS/AUTHENTIC-GRACE?node-id=0%3A1) The wireframe developed into a more complete mock-up as the design process progressed, as part of the creative process, since images and products were supposed to be a major focus of the website. Aspects of the site derived some inspiration from the content/images being utilized, while still maintaining the flexibility required for future updates. The completed MVP very closely follows the wireframe/mock-up, with minor adjustments as required by time-constraints, developer adjustments or other limitations or needs.
+The wireframe/mock-up includes a couple versions of the homepage, a design for a desktop and mobile e-mail module, menus, mobile layout and mood boards. Figma was used to design and create this layout, which can be seen below: ![Figma Wireframe/Mock-Up for Authentic Grace](images/design/figma-mock-up.jpg) The wireframe developed into a more complete mock-up as the design process progressed, as part of the creative process, since images and products were supposed to be a major focus of the website. Aspects of the site derived some inspiration from the content/images being utilized, while still maintaining the flexibility required for future updates. The completed MVP very closely follows the wireframe/mock-up, with minor adjustments as required by time-constraints, developer adjustments or other limitations or needs.
 
 ### Prototype
 
@@ -62,9 +62,7 @@ The contact form is easy to use and doesn't include any flashy animation.
 
 #### Color Palette
 
-The color palette is easy on the eyes, avoids greens and reds that might be problematic for colorblindness, and provides enough contrast to make the site easy to read and utilize.
-
-(no green/red)
+The color palette will not overly strain eyes, avoids greens and reds that might be problematic for colorblindness, and provides enough contrast to make the site easy to read and utilize.
 
 ### Layout
 
@@ -72,7 +70,7 @@ The layout of the site is mobile-friendly/mobile-first, but easily translates to
 
 ### Color Palette
 
-One neutral color palette was chosen from two different mood boards. Neutral grays were first chosen from palettes found online, then altered and adopted. White and a softer black were added for contrast, along with a splash of a dusty rose color. Colors were inspired and influenced by some of the images used. As mentioned before, competitors, similar brands, and blog color palettes inspired our color choices. We believe these choices are classic, timeless and create harmony.
+One neutral color palette was chosen from two different mood boards. Neutral grays were first chosen from palettes found online, then altered and adopted. White and a softer black were added for contrast, along with a splash of a dusty rose color. Colors were inspired and influenced by some of the images used. As mentioned before, competitors, similar brands,and blog color palettes inspired our color choices. We believe these choices are classic, timeless and create harmony on the site. They are also representative of the Authentic Grace brand.
 
 ### Typography
 
@@ -102,7 +100,7 @@ We wanted to focus on building a site with vanilla CSS and JavaScript (i.e., no 
 
 ### Other
 
-- Figma (wireframe)
+- Figma (wireframe/mock-up/prototype)
 - Business Model Canvas template by Alexander Osterwalder
 - Amazon Alexa customer journey exercise template
 - Visual Studio Code and many extensions
@@ -113,6 +111,7 @@ We learned a lot!  Here is a bulleted list of some things that we learned:
 
 - that Google is our best friend!
 - how to identify client needs and implement them on the website
+- how to use Figma to create a prototype for a webpage
 - how to design a mobile-first site
 - how to control various types of layout with vanilla CSS (e.g., hero image, grid of images, and navbar)
 - how to use the CSS Grid and Flexbox
