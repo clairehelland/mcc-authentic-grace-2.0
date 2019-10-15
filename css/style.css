@@ -624,73 +624,30 @@ select{
 }
 
 .footer-icons {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap-reverse;
-  align-items: center; 
-  text-align: center; 
-  justify-content: center; 
-  font-size: 30px; 
-  color: #eec7b5;
-  padding-bottom: 20px; 
-  /* padding-right: 20px; 
-  padding-left: 20px;  */
-}
-/* TEST */
-.footer-icons-test {
   display: block;
   text-align: center;
   font-size: 2rem; 
   color: #eec7b5;
   padding-bottom: 20px; 
 }
-/* END TEST */
 
-.footer-social-media li {
-  flex: 10%;  
-  align-items: center; 
-  justify-content: center; 
-  flex-wrap: wrap-reverse; 
-}
-
-/* TEST */
-.footer-icons-li-test { /* previously .footer-social-media li */
+.footer-icons-li { /* previously .footer-social-media li */
   display: inline-block;
   width: 3rem;
   padding: .5rem;
 }
-/* END TEST */
 
 .footer a {
   color: #fff; 
   text-decoration: none; 
 }
 
-.links a: hover {
-  background-color: #FFF; 
-}
-
-/* TEST */
-/* Note: White background will not work if we keep the text color white */
-/* Here is an alternative hover effect: */
-.footer-link-li-test:hover {
+.footer-link-li:hover {
   /* background-color: #5a5a5a; */
   font-size: 115%;
 }
-/* END TEST */
 
 .footer-row {
-  display: flex; 
-  flex-direction: row;  
-  flex-wrap: wrap-reverse;
-  align-items: center; 
-  justify-content: center; 
-  text-align: center;   
-  min-width: 0;  
-}
-
-/* TEST */
-.footer-row-test {
   display: flex; 
   flex-direction: column-reverse;  
    align-items: center; 
@@ -700,27 +657,18 @@ select{
 }
 
 @media (min-width: 1041px) {
-  .footer-row-test {
+  .footer-row {
     /* width: 360px; */
     flex-direction: row;
   }
 }
-/* END TEST */
 
 .footer-column {
-  flex: 33.33%;  
-  padding-right: 20px; 
-  padding-left: 20px; 
-  box-sizing: border-box;
-}
-
-/* TEST */
-.footer-column-test {
   flex: 33.33%;  
   min-width: 320px;
   padding: 20px;
 }
-/* END TEST */
+
 
 
 
