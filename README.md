@@ -1,23 +1,20 @@
 # Authentic Grace
 
+Authentic Grace is a fictional store in South Carolina.  The website is an original creation for this store by the authors in response to an assignment.  
+
 ## Description
 
-This project was a joint effort produced in response to an assignment for Moms Can Code School, Cohort 4.  
+This project was a joint effort produced in response to an assignment for Moms Can Code School, Cohort 4.  The timeframe allotted for this project was two weeks.  This was enough time for the authors, who are relatively new to coding, to put together a functioning, responsive website, but not enough time to make everything look and work perfectly. See a later section for information about our plans for future improvements.
 
-![Assignment to create a minimum viable product, or MVP, for online store] (images/design/customer-journey.JPG)
+The assignment details can be seen in the image below.  It should be noted that the client and her desired website are fictional, but realistic.
 
-![Custome Journey] (https://github.com/andreamartz/mmc-authentic-grace/blob/master/images/design/customer-journey.JPG)
-
-The assignment, An online storefront created for a specific (fictional) boutique women's clothing store called Authentic Grace.
-
-This assignment was 
+![Assignment to create a minimum viable product, or MVP, for online store](images/design/assignment.JPG)
 
 ## Authors
 
 Claire Helland (clairehelland) - Claire is a novice coder learning to code in the MomsCan&Co Coding program. Her work is informed by a marketing and e-commerce career.
 
-Andrea Martz (andreamartz)
-
+Andrea Martz, M.A. (andreamartz) is a "jack of many trades" in the field of professional certification testing.  Recently, she fell in love with coding, and she is currently building her full-stack web development skills.  She is passionate about education for all people and service to marginalized and underrepresented communities.
 
 ## Understanding the Business
 
@@ -41,86 +38,95 @@ The design of the site was tied as closely as possible to the buyer persona and 
 
 A neutral color palette was chosen, which aligns with the business goals and customer persona, with just a dash of color. Two very simple mood boards with two similar color schemes were created as part of the design process (and included with wireframe/mock-up) to help guide the look and feel of the site as it was molded into the current form.
 
-### Design - Wireframe/Mock-up
+### Wireframe/Mock-up
 
 The wireframe/mock-up includes a couple versions of the homepage, a design for a desktop and mobile e-mail module, menus, mobile layout and mood boards. Figma was used to design and create this layout, which can be seen below: ![Figma Wireframe/Mock-Up for Authentic Grace](https://www.figma.com/file/cCE6o7pNZsbhR6qQBmdNUS/AUTHENTIC-GRACE?node-id=0%3A1) The wireframe developed into a more complete mock-up as the design process progressed, as part of the creative process, since images and products were supposed to be a major focus of the website. Aspects of the site derived some inspiration from the content/images being utilized, while still maintaining the flexibility required for future updates. The completed MVP very closely follows the wireframe/mock-up, with minor adjustments as required by time-constraints, developer adjustments or other limitations or needs.
 
-### Design - Prototype
+### Prototype
 
 Figma was also used to create a prototype for the site, allowing us to see how the site might function via both desktop and mobile device when certain buttons and areas are clicked or otherwise activated. This was particularly helpful for the mobile menu and e-mail modal.
 
-### Design - Accessibility Considerations
+### Accessibility Considerations
 
 Although not directly addressed in our wireframe and prototype, we know that every site should meet accessibility standards.  While we are not experts in accessibility and have no formal training in accessibility practices or standards, we have incorporated everything we know about accessibility into the building of this site. This includes making the site easy to read and use.
 
 If we had additional time to research and include even greater accessibility considerations, we would love to do that in future iterations of this project.
 
-#### Design - Accessibility - Images
+#### Images
 
 There are no background images on this site.  As ours is a site designed to sell clothing, we believe that all images are part of the core content of the site.  For that reason, background images - which do not provide information to search engines and do not offer alt text to describe the image - were avoided.
 
-#### Design - Accessibility - Contact Form
+#### Contact Form
 
 The contact form is easy to use and doesn't include any flashy animation.
 
-#### Design - Accessibility - Color Palette
+#### Color Palette
 
 The color palette is easy on the eyes, avoids greens and reds that might be problematic for colorblindness, and provides enough contrast to make the site easy to read and utilize.
 
 (no green/red)
 
-### Design - Layout
+### Layout
 
 The layout of the site is mobile-friendly/mobile-first, but easily translates to desktop. Individual content blocks make up each section of the site. Photos are prominant. Each block accomplishes a different goal and has a different call to action to help drive the customer foward on their journey. Blocks are simply crafted and incorporate minimalist layouts for ease of use and focus on the products.
 
-### Design - Color Palette
+### Color Palette
 
 One neutral color palette was chosen from two different mood boards. Neutral grays were first chosen from palettes found online, then altered and adopted. White and a softer black were added for contrast, along with a splash of a dusty rose color. Colors were inspired and influenced by some of the images used. As mentioned before, competitors, similar brands, and blog color palettes inspired our color choices. We believe these choices are classic, timeless and create harmony.
 
-### Design - Typography
+### Typography
 
 A simple sans-serif Google font, Overpass, was chosen to make the site readable and accessible.
 
 ## Programming Languages Used
 
-HTML
-CSS
-JavaScript
+- HTML
+- CSS
+- JavaScript
 
 We wanted to focus on building a site with vanilla CSS and JavaScript (i.e., no frameworks) so that we could build and solidify our skills in those languages.
 
 ## Software Used
 
-Visual Studio Code
+- Lucidchart (for the Customer Journey Map)
+- Visual Studio Code
 
 ### Planning, Communication, and Sharing Resources
 
-Trello
-Google Drive
-Slack
-Email
-Git and Github
+- Trello
+- Google Drive
+- Slack
+- Email
+- Git
+- Github
 
 ### Other
 
-Figma
-Business Model Canvas
-Lucidchart (for the Customer Journey Map)
+- Figma (wireframe)
+- Business Model Canvas template by Alexander Osterwalder
+- Amazon Alexa customer journey exercise template
+- Visual Studio Code and many extensions
 
 ## Things We've Learned
 
+We learned a lot!  Here is a bulleted list of some things that we learned:
+
+- that Google is our best friend!
+- how to identify client needs and implement them on the website
+- how to design a mobile-first site
+- how to control various types of layout with vanilla CSS (e.g., hero image, grid of images, and navbar)
+- how to use the CSS Grid and Flexbox
+- how to use Git and Github when working as a team
+- how Javascript can be used to change the frontend
+
+Most importantly, we've confirmed that we have what it takes to be web developers.  Passion.  Commitment.  Problem-solving ability.
+
 ## Future Improvements
 
-The time allotted for this project was tight for us, because we were learning to code while we were building this site.  We were also working on other projects simultaneously and taking in a large amount of new information as students in the Moms Can Code School.
+The time allotted for this project (two weeks) was tight for us, because we were learning to code while we were building this site.  We were also working on other projects simultaneously and taking in a large amount of new information as students in the Moms Can Code School program.
 
 As a result, there are some features we did not have time to build before the due date.  There are also some bugs we did not fix yet.  We hope to have time after the MCCS program is over to improve the site in these ways.  As we think of improvements to make, we've been logging them in the Issues tab.
 
-## Credits + License
+## Credits
 
-Note any templates and software used here
-Figma
-LucidCharts customer journey template
-Amazon Alexa customer journey exercise template
 Photo credits: Unsplash and Pexels
-
-
