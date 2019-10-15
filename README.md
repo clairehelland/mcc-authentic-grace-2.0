@@ -38,51 +38,51 @@ The design of the site was tied as closely as possible to the buyer persona and 
 
 A neutral color palette was chosen, which aligns with the business goals and customer persona, with just a dash of color. Two very simple mood boards with two similar color schemes were created as part of the design process (and included with wireframe/mock-up) to help guide the look and feel of the site as it was molded into the current form.
 
-### Design - Wireframe/Mock-up
+### Wireframe/Mock-up
 
 The wireframe/mock-up includes a couple versions of the homepage, a design for a desktop and mobile e-mail module, menus, mobile layout and mood boards. Figma was used to design and create this layout, which can be seen below: ![Figma Wireframe/Mock-Up for Authentic Grace](https://www.figma.com/file/cCE6o7pNZsbhR6qQBmdNUS/AUTHENTIC-GRACE?node-id=0%3A1) The wireframe developed into a more complete mock-up as the design process progressed, as part of the creative process, since images and products were supposed to be a major focus of the website. Aspects of the site derived some inspiration from the content/images being utilized, while still maintaining the flexibility required for future updates. The completed MVP very closely follows the wireframe/mock-up, with minor adjustments as required by time-constraints, developer adjustments or other limitations or needs.
 
-### Design - Prototype
+### Prototype
 
 Figma was also used to create a prototype for the site, allowing us to see how the site might function via both desktop and mobile device when certain buttons and areas are clicked or otherwise activated. This was particularly helpful for the mobile menu and e-mail modal.
 
-### Design - Accessibility Considerations
+### Accessibility Considerations
 
 Although not directly addressed in our wireframe and prototype, we know that every site should meet accessibility standards.  While we are not experts in accessibility and have no formal training in accessibility practices or standards, we have incorporated everything we know about accessibility into the building of this site. This includes making the site easy to read and use.
 
 If we had additional time to research and include even greater accessibility considerations, we would love to do that in future iterations of this project.
 
-#### Design - Accessibility - Images
+#### Images
 
 There are no background images on this site.  As ours is a site designed to sell clothing, we believe that all images are part of the core content of the site.  For that reason, background images - which do not provide information to search engines and do not offer alt text to describe the image - were avoided.
 
-#### Design - Accessibility - Contact Form
+#### Contact Form
 
 The contact form is easy to use and doesn't include any flashy animation.
 
-#### Design - Accessibility - Color Palette
+#### Color Palette
 
 The color palette is easy on the eyes, avoids greens and reds that might be problematic for colorblindness, and provides enough contrast to make the site easy to read and utilize.
 
 (no green/red)
 
-### Design - Layout
+### Layout
 
 The layout of the site is mobile-friendly/mobile-first, but easily translates to desktop. Individual content blocks make up each section of the site. Photos are prominant. Each block accomplishes a different goal and has a different call to action to help drive the customer foward on their journey. Blocks are simply crafted and incorporate minimalist layouts for ease of use and focus on the products.
 
-### Design - Color Palette
+### Color Palette
 
 One neutral color palette was chosen from two different mood boards. Neutral grays were first chosen from palettes found online, then altered and adopted. White and a softer black were added for contrast, along with a splash of a dusty rose color. Colors were inspired and influenced by some of the images used. As mentioned before, competitors, similar brands, and blog color palettes inspired our color choices. We believe these choices are classic, timeless and create harmony.
 
-### Design - Typography
+### Typography
 
 A simple sans-serif Google font, Overpass, was chosen to make the site readable and accessible.
 
 ## Programming Languages Used
 
-HTML
-CSS
-JavaScript
+- HTML
+- CSS
+- JavaScript
 
 We wanted to focus on building a site with vanilla CSS and JavaScript (i.e., no frameworks) so that we could build and solidify our skills in those languages.
 
