@@ -1,23 +1,20 @@
 # Authentic Grace
 
+Authentic Grace is a fictional store in South Carolina.  The website is an original creation for this store by the authors in response to an assignment.  
+
 ## Description
 
-This project was a joint effort produced in response to an assignment for Moms Can Code School, Cohort 4.  
+This project was a joint effort produced in response to an assignment for Moms Can Code School, Cohort 4.  The timeframe allotted for this project was two weeks.  This was enough time for the authors, who are relatively new to coding, to put together a functioning, responsive website, but not enough time to make everything look and work perfectly. See a later section for information about our plans for future improvements.
 
-![Assignment to create a minimum viable product, or MVP, for online store] (images/design/customer-journey.JPG)
+The assignment details can be seen in the image below.  It should be noted that the client and her desired website are fictional, but realistic.
 
-![Custome Journey] (https://github.com/andreamartz/mmc-authentic-grace/blob/master/images/design/customer-journey.JPG)
-
-The assignment, An online storefront created for a specific (fictional) boutique women's clothing store called Authentic Grace.
-
-This assignment was 
+![Assignment to create a minimum viable product, or MVP, for online store](images/design/assignment.JPG)
 
 ## Authors
 
 Claire Helland (clairehelland) - Claire is a novice coder learning to code in the MomsCan&Co Coding program. Her work is informed by a marketing and e-commerce career.
 
-Andrea Martz (andreamartz)
-
+Andrea Martz, M.A. (andreamartz) is a "jack of many trades" in the field of professional certification testing.  Recently, she fell in love with coding, and she is currently building her full-stack web development skills.  She is passionate about education for all people and service to marginalized and underrepresented communities.
 
 ## Understanding the Business
 
@@ -91,36 +88,45 @@ We wanted to focus on building a site with vanilla CSS and JavaScript (i.e., no 
 
 ## Software Used
 
-Visual Studio Code
+- Lucidchart (for the Customer Journey Map)
+- Visual Studio Code
 
 ### Planning, Communication, and Sharing Resources
 
-Trello
-Google Drive
-Slack
-Email
-Git and Github
+- Trello
+- Google Drive
+- Slack
+- Email
+- Git
+- Github
 
 ### Other
 
-Figma
-Business Model Canvas
-Lucidchart (for the Customer Journey Map)
+- Figma (wireframe)
+- Business Model Canvas template by Alexander Osterwalder
+- Amazon Alexa customer journey exercise template
+- Visual Studio Code and many extensions
 
 ## Things We've Learned
 
+We learned a lot!  Here is a bulleted list of some things that we learned:
+
+- that Google is our best friend!
+- how to identify client needs and implement them on the website
+- how to design a mobile-first site
+- how to control various types of layout with vanilla CSS (e.g., hero image, grid of images, and navbar)
+- how to use the CSS Grid and Flexbox
+- how to use Git and Github when working as a team
+- how Javascript can be used to change the frontend
+
+Most importantly, we've confirmed that we have what it takes to be web developers.  Passion.  Commitment.  Problem-solving ability.
+
 ## Future Improvements
 
-The time allotted for this project was tight for us, because we were learning to code while we were building this site.  We were also working on other projects simultaneously and taking in a large amount of new information as students in the Moms Can Code School.
+The time allotted for this project (two weeks) was tight for us, because we were learning to code while we were building this site.  We were also working on other projects simultaneously and taking in a large amount of new information as students in the Moms Can Code School program.
 
 As a result, there are some features we did not have time to build before the due date.  There are also some bugs we did not fix yet.  We hope to have time after the MCCS program is over to improve the site in these ways.  As we think of improvements to make, we've been logging them in the Issues tab.
 
-## Credits + License
+## Credits
 
-Note any templates and software used here
-Figma
-LucidCharts customer journey template
-Amazon Alexa customer journey exercise template
 Photo credits: Unsplash and Pexels
-
-
