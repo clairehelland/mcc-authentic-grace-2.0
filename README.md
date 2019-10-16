@@ -12,7 +12,7 @@ The assignment details can be seen in the image below.  It should be noted that 
 
 ## Authors
 
-Claire Helland (clairehelland) - Claire is a novice coder learning front-end development in the MomsCan&Co Coding program. She hopes to one day work up to being a full-stack developer, and her codind is informed by a marketing and e-commerce career. Claire hopes to one day use her skills as a force for good in the world.
+Claire Helland (clairehelland) - Claire is a novice coder learning front-end development in the MomsCan&Co Coding program. She hopes to one day work up to being a full-stack developer, and her web design process is informed by a marketing and e-commerce career. Claire hopes to one day use her skills as a force for good in the world.
 
 Andrea Martz, M.A. (andreamartz) is a "jack of many trades" in the field of professional certification testing.  Recently, she fell in love with coding, and she is currently building her full-stack web development skills.  She is passionate about education for all people and service to marginalized and underrepresented communities.
 
@@ -40,7 +40,11 @@ A neutral color palette was chosen, which aligns with the business goals and cus
 
 ### Wireframe/Mock-up
 
-The wireframe/mock-up includes a couple versions of the homepage, a design for a desktop and mobile e-mail module, menus, mobile layout and mood boards. Figma was used to design and create this layout, which can be seen below: ![Figma Wireframe/Mock-Up for Authentic Grace](images/design/figma-mock-up.jpg) The wireframe developed into a more complete mock-up as the design process progressed, as part of the creative process, since images and products were supposed to be a major focus of the website. Aspects of the site derived some inspiration from the content/images being utilized, while still maintaining the flexibility required for future updates. The completed MVP very closely follows the wireframe/mock-up, with minor adjustments as required by time-constraints, developer adjustments or other limitations or needs.
+The wireframe/mock-up includes a couple versions of the homepage, a design for a desktop and mobile e-mail module, menus, mobile layout and mood boards. Figma was used to design and create this layout, which can be seen below:
+
+![Figma Wireframe/Mock-Up for Authentic Grace](images/design/figma-mock-up.jpg)
+
+The wireframe developed into a more complete mock-up as the design process progressed, as part of the creative process, since images and products were supposed to be a major focus of the website. Aspects of the site derived some inspiration from the content/images being utilized, while still maintaining the flexibility required for future updates. The completed MVP very closely follows the wireframe/mock-up, with minor adjustments as required by time-constraints, developer adjustments or other limitations or needs.
 
 ### Prototype
 
@@ -52,15 +56,15 @@ Although not directly addressed in our wireframe and prototype, we know that eve
 
 If we had additional time to research and include even greater accessibility considerations, we would love to do that in future iterations of this project.
 
-#### Images
+#### Image Accessibility
 
 There are no background images on this site.  As ours is a site designed to sell clothing, we believe that all images are part of the core content of the site.  For that reason, background images - which do not provide information to search engines and do not offer alt text to describe the image - were avoided.
 
-#### Contact Form
+#### Contact Form Accessibility
 
 The contact form is easy to use and doesn't include any flashy animation.
 
-#### Color Palette
+#### Color Palette Accessibility
 
 The color palette will not overly strain eyes, avoids greens and reds that might be problematic for colorblindness, and provides enough contrast to make the site easy to read and utilize.
 
