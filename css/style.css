@@ -332,9 +332,28 @@ padding: 0.2rem 0;
   margin: 0 auto;
 }
 
-h6.hero-text {
+.hero-text h6 {
   padding-top: 20px;
 }
+
+/*Return to this eventually to resize hero text in future iterations
+@media (max-width: 700px) {
+  .hero-text h1 {
+    font-size: 30px; 
+  }
+ }
+
+@media (max-width: 700px) {
+  .hero-text h4 {
+    font-size: 20px; 
+  }
+ }
+
+ @media (max-width: 700px) {
+  .hero-text h6 {
+    font-size: 16px; 
+  }
+ }*/
 
 /* 4. Image Grid Section*/
 
