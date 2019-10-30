@@ -2,6 +2,8 @@
 
 Authentic Grace is a fictional store in South Carolina.  The website is an original creation for this store by the authors in response to an assignment.  
 
+This is phase two of the assignment, which required adding a product page to phase one. Phase one was a joint effort, while phase two was an individual effort. You will see specific updates below designated as phase two updates.
+
 ## Description
 
 This project was a joint effort produced in response to an assignment for Moms Can Code School, Cohort 4.  The timeframe allotted for this project was two weeks.  This was enough time for the authors, who are relatively new to coding, to put together a functioning, responsive website, but not enough time to make everything look and work perfectly. See a later section for information about our plans for future improvements.
@@ -10,9 +12,15 @@ The assignment details can be seen in the image below.  It should be noted that 
 
 ![Assignment to create a minimum viable product, or MVP, for online store](images/design/assignment.JPG)
 
+Phase two required each individual to create a product page and link it to the MVP created in phase one.
+
 ## Authors
 
+Phase one & two:
+
 Claire Helland (clairehelland) - Claire is a novice coder learning front-end development in the MomsCan&Co Coding program. She hopes to one day work up to being a full-stack developer, and her web design process is informed by a marketing and e-commerce career. Claire hopes to one day use her skills as a force for good in the world.
+
+Phase one:
 
 Andrea Martz, M.A. (andreamartz) is a "jack of many trades" in the field of professional certification testing.  Recently, she fell in love with coding, and she is currently building her full-stack web development skills.  She is passionate about education for all people and service to marginalized and underrepresented communities.
 
@@ -38,6 +46,8 @@ The design of the site was tied as closely as possible to the buyer persona and 
 
 A neutral color palette was chosen, which aligns with the business goals and customer persona, with just a dash of color. Two very simple mood boards with two similar color schemes were created as part of the design process (and included with wireframe/mock-up) to help guide the look and feel of the site as it was molded into the current form.
 
+Similar design considerations were used in Phase 2 of the project.
+
 ### Wireframe/Mock-up
 
 The wireframe/mock-up includes a couple versions of the homepage, a design for a desktop and mobile e-mail module, menus, mobile layout and mood boards. Figma was used to design and create this layout, which can be seen below:
@@ -46,15 +56,21 @@ The wireframe/mock-up includes a couple versions of the homepage, a design for a
 
 The wireframe developed into a more complete mock-up as the design process progressed, as part of the creative process, since images and products were supposed to be a major focus of the website. Aspects of the site derived some inspiration from the content/images being utilized, while still maintaining the flexibility required for future updates. The completed MVP very closely follows the wireframe/mock-up, with minor adjustments as required by time-constraints, developer adjustments or other limitations or needs.
 
+Phase two also required use of Figma for wireframing/mock-up of the product page.
+
 ### Prototype
 
 Figma was also used to create a prototype for the site, allowing us to see how the site might function via both desktop and mobile device when certain buttons and areas are clicked or otherwise activated. This was particularly helpful for the mobile menu and e-mail modal.
 
+Figma used in Phase two of the project as well.
+
 ### Accessibility Considerations
 
-Although not directly addressed in our wireframe and prototype, we know that every site should meet accessibility standards.  While we are not experts in accessibility and have no formal training in accessibility practices or standards, we have incorporated everything we know about accessibility into the building of this site. This includes making the site easy to read and use.
+Phase one: Although not directly addressed in our wireframe and prototype, we know that every site should meet accessibility standards.  While we are not experts in accessibility and have no formal training in accessibility practices or standards, we have incorporated everything we know about accessibility into the building of this site. This includes making the site easy to read and use.
 
 If we had additional time to research and include even greater accessibility considerations, we would love to do that in future iterations of this project.
+
+Phase two: An accessibility report was created to review accessibility of site for future updates.
 
 #### Image Accessibility
 
@@ -111,7 +127,8 @@ We wanted to focus on building a site with vanilla CSS and JavaScript (i.e., no 
 
 ## Things We've Learned
 
-We learned a lot!  Here is a bulleted list of some things that we learned:
+
+Phase One: We learned a lot!  Here is a bulleted list of some things that we learned:
 
 - that Google is our best friend!
 - how to identify client needs and implement them on the website
@@ -124,12 +141,18 @@ We learned a lot!  Here is a bulleted list of some things that we learned:
 
 Most importantly, we've confirmed that we have what it takes to be web developers.  Passion.  Commitment.  Problem-solving ability.
 
+Phase Two: We learned to create and link a product page to our homepage, and also learned how to create an accessibility report for future improvements.
+
 ## Future Improvements
 
-The time allotted for this project (two weeks) was tight for us, because we were learning to code while we were building this site.  We were also working on other projects simultaneously and taking in a large amount of new information as students in the Moms Can Code School program.
+Phase one: The time allotted for this project (two weeks) was tight for us, because we were learning to code while we were building this site.  We were also working on other projects simultaneously and taking in a large amount of new information as students in the Moms Can Code School program.
 
 As a result, there are some features we did not have time to build before the due date.  There are also some bugs we did not fix yet.  We hope to have time after the MCCS program is over to improve the site in these ways.  As we think of improvements to make, we've been logging them in the Issues tab.
+
+Phase two: Accessibility issues recognized from a report completed in Phase 2 should be addressed in future updates.
 
 ## Credits
 
 Photo credits: Unsplash and Pexels
+
+Other resource credits: Design Modo: Create a Product Page 
