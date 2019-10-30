@@ -49,7 +49,7 @@ h6 {
 footer {
   background-color: #292929;
   color: #fff;
-  padding: 2rem;
+  padding: 4rem 0;
   line-height: 1.5;
   letter-spacing: 1px;
 }
@@ -70,14 +70,22 @@ footer {
   border: 1px solid #eec7b5; 
   display: none;
   position: fixed;
+  top: 20%;
   background: #fff;
   padding: 1rem;
   width: 280px;
-  top: 20%;
-  left: 30%;
-  width: 40%;
-  /* left: calc(50% - 180px); */
+  /* padding: 2.5rem;  */
+  left: calc(50% - 140px);
   z-index: 200;
+}
+
+@media (min-width: 680px) {
+  .modal {
+    width: 360px;
+    top: 20%;
+    left: 30%;
+    width: 40%;
+  }
 }
 
 .modal-title,
@@ -116,13 +124,6 @@ footer {
   background: #292929;
   border-color: #292929;
   color: #fff;
-}
-
-@media (min-width: 400px) {
-  .modal {
-    width: 360px;
-    left: calc(50% - 190px);
-  }
 }
 
 /* 2a. Navbar Section - Main */
@@ -331,9 +332,28 @@ padding: 0.2rem 0;
   margin: 0 auto;
 }
 
-h6.hero-text {
+.hero-text h6 {
   padding-top: 20px;
 }
+
+/*Return to this eventually to resize hero text in future iterations
+@media (max-width: 700px) {
+  .hero-text h1 {
+    font-size: 30px; 
+  }
+ }
+
+@media (max-width: 700px) {
+  .hero-text h4 {
+    font-size: 20px; 
+  }
+ }
+
+ @media (max-width: 700px) {
+  .hero-text h6 {
+    font-size: 16px; 
+  }
+ }*/
 
 /* 4. Image Grid Section*/
 
@@ -398,12 +418,93 @@ h6.hero-text {
 }
 /* 6. Style Section*/
 
+.blog-block h2 {
+  text-align: center; 
+  padding: 20px; 
+}
+
+.blog-block {  
+ 
+    flex-direction: row;  
+    flex-wrap: wrap; 
+    display: flex;
+    justify-content: center;
+    align-content: center; 
+    align-items: center;  
+    box-sizing: border-box; 
+    margin: 0;  
+    padding: 0;  
+}
+
+.blog-image img {
+    flex: 1 0 0; 
+    min-width: 320px; 
+    max-width: 100vw; 
+    object-fit: cover;
+    box-sizing: border-box; 
+    margin:0;
+    padding: 0; 
+    display: block; 
+  }
+      
+  .blog-text {
+    flex: 1 0 0;  
+    min-width: 320px; 
+    max-width: 50wv; 
+    overflow-wrap: break-word; 
+    text-align: center; 
+    background-color: #fff;     
+    box-sizing: border-box;  
+    padding-left: 3rem;
+    padding-right: 3rem;  
+    padding-bottom: 3rem; 
+  }
+
+
+.btn-blog {
+    background-color:  #eec7b5; 
+    color: #292929; 
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px; 
+}
+
+.blog-text h2 {
+  padding: 4rem 30px; 
+}
+
+.blog-text h4 {
+  padding: 10px 2.5rem; 
+}
+
+@media (min-width: 1040px) {
+ .blog-image img {
+   width: 50vw; 
+ }
+}
 
 /* 7. Testimonials Section*/
+
+
 .testimonials-section {
   background-color: #eec7b5;
+  color: #292929; 
   font-weight: 400;
-  padding: 200px 50px;
+  padding: 7rem 3rem;
+}
+
+.testimonials-section h2 {
+    text-align: center; 
+    padding-bottom: 5rem; 
+}
+
+.testimonials-section span {
+  text-align: right; 
+  font-weight: bold; 
 }
 
 .testimonials-wrapper {
@@ -417,10 +518,23 @@ h6.hero-text {
 .testimonial {
   display: flex;
   flex-flow: column;
-  border: 1px solid #292929;
+  border: 1px solid #e5e5e5;
+  box-shadow: 2px 3px #5a5a5a; 
   padding: 2rem;
   justify-content: center;
   max-width: 300px;
+  background-color: #fff;
+}
+
+.testimonial p {
+  padding-top: 2rem; 
+  padding-right: 1rem; 
+  padding-left: 1rem; 
+  text-align: left; 
+}
+
+.review p {
+  text-indent: 20px; 
 }
 
 .testimonial-image-wrapper {
@@ -435,12 +549,181 @@ h6.hero-text {
 }
 
 /* 8. Get In Touch Section */
-.get-in-touch-container {
+/* .get-in-touch-container {
   background-color: #fff;
   padding: 200px 50px;
+} */
+
+.contact {
+  background-color: #fff;
+  padding: 7rem 3rem; 
+}
+
+.contact h2 {
+    text-align: center; 
+    padding-bottom: 5rem; 
+}
+
+.form {
+    font-family: "Overpass", sans-serif;  
+}
+.form-style-1 {
+	margin:10px auto;
+	max-width: 400px;
+	padding: 20px 12px 10px 20px;
+	font: 16px "Overpass", sans-serif;
+}
+.form-style-1 li {
+	padding: 0;
+	display: block;
+	list-style: none;
+	margin: 10px 0 0 0;
+}
+.form-style-1 label{
+	margin:0 0 3px 0;
+	padding:0px;
+	display:block;
+	font-weight: bold;
+}
+.form-style-1 input[type=text], 
+.form-style-1 input[type=date],
+.form-style-1 input[type=datetime],
+.form-style-1 input[type=number],
+.form-style-1 input[type=search],
+.form-style-1 input[type=time],
+.form-style-1 input[type=url],
+.form-style-1 input[type=email],
+textarea, 
+select{
+	box-sizing: border-box;
+	border:1px solid #BEBEBE;
+	padding: 7px;
+	margin:0px;
+	outline: none;	
+}
+.form-style-1 input[type=text]:focus, 
+.form-style-1 input[type=date]:focus,
+.form-style-1 input[type=datetime]:focus,
+.form-style-1 input[type=number]:focus,
+.form-style-1 input[type=search]:focus,
+.form-style-1 input[type=time]:focus,
+.form-style-1 input[type=url]:focus,
+.form-style-1 input[type=email]:focus,
+.form-style-1 textarea:focus, 
+.form-style-1 select:focus{
+	border: 1px solid #eec7b5;
+}
+.form-style-1 .field-divided{
+	width: 49%;
+}
+
+.form-style-1 .field-long{
+	width: 100%;
+}
+.form-style-1 .field-select{
+	width: 100%;
+}
+.form-style-1 .field-textarea{
+	height: 100px;
+}
+.form-style-1 input[type=submit], .form-style-1 input[type=button]{
+	background: #eec7b5;
+	padding: 8px 15px 8px 15px;
+	border: none;
+	color: #fff;
+}
+.form-style-1 input[type=submit]:hover, .form-style-1 input[type=button]:hover{
+	background: #eec7b5;
+	box-shadow:none;
+}
+.form-style-1 .required{
+	color: #eec7b5; 
+}
+
+.subject span {
+    color:  #e5e5e5; 
 }
 
 /* 9. Footer Section*/
+
+.footer {
+  width: 100%; 
+  height: 100%;
+}
+
+.footer-icons {
+  display: block;
+  text-align: center;
+  font-size: 2rem; 
+  padding-bottom: 20px;
+}
+
+.footer-icons-li { /* previously .footer-social-media li */
+  display: inline-block;
+  width: 3rem;
+  padding: .5rem;
+  color: #eec7b5;
+}
+
+.footer-icons-li a {
+  text-decoration: none; 
+  color: #eec7b5;
+}
+
+.footer-icon {
+  cursor: pointer;
+}
+  
+.footer-links a {
+  color: #fff; 
+  text-decoration: none; 
+}
+
+.footer-link-li:hover {
+  /* background-color: #5a5a5a; */
+  font-size: 115%;
+}
+
+.footer-row {
+  display: flex; 
+  flex-direction: column-reverse;  
+   align-items: center; 
+  justify-content: center; 
+  text-align: center;   
+  min-width: 320px;  
+}
+
+@media (min-width: 1041px) {
+  .footer-row {
+    /* width: 360px; */
+    flex-direction: row;
+  }
+}
+
+.footer-column {
+  flex: 33.33%;  
+  min-width: 320px;
+  padding: 20px;
+}
+
+.phone a {
+  text-decoration: none; 
+  color: #fff; 
+}
+
+
+
+
+
+
+
+
+/*.copyright {
+    text-align: center;  
+}*/
+
+
+
 
 
 /* hover effect with delay:
